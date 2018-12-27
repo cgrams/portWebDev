@@ -1,0 +1,209 @@
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-duration: 0.75s;
+  animation-name: bounceIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}
+
+
+
+.textUp {
+    font-size: 12vw;
+    font-weight: 700;
+    color:  #43b7ff;
+    z-index: 2;
+}
+
+.titleDownMain{
+	color:	    #43b7ff;
+	text-shadow: -1px -1px 0 #0528d0, 1px -1px 0 #0528d0, -1px 1px 0 #0528d0, 1px 1px 0 #0528d0;
+	position: relative;
+	z-index: 1;
+	font-size: 4vw;
+}
+
+.titleDownWeb{
+    color:      #43b7ff;
+    text-shadow: -1px -1px 0 #0528d0, 1px -1px 0 #0528d0, -1px 1px 0 #0528d0, 1px 1px 0 #0528d0;
+    position: absolute;
+    z-index: 1;
+    font-size: 4vw;
+    top: 111px;
+    left: 134px;
+}
+.handTop.handSize {
+    width: 175px;
+}
+img.handMiddle.handSize {
+    width: 95px;
+    left: 50px;
+    position: relative;
+    animation-delay: .2s;
+}
+img.handBottom.handSize {
+    width: 123px;
+    left: 21px;
+    position: relative;
+    animation-delay: .4s;
+}
+.titleWrapper {
+    display: grid;
+    grid-template-columns: 23% 23% 45%;
+}
+.subContainerTitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow{
+      height: 90px;
+      cursor: pointer;
+}
+
+.arrow path{
+  fill: rgba(255, 255, 255, 0.1);
+  transition-timing-function: ease;
+  transition-duration: .3s;
+}
+
+.arrow path:hover{
+  fill: #43b7ff;
+}
+
+.handContainer {
+    position: relative;
+    left: 0;
+    z-index: 1;
+    float: left;
+    max-width: 185px;
+}
+h3.subTitle {
+    padding-left: 10px;
+    color: #62b8f7;
+}
+.handPics{
+    position: relative;
+    left: -15px;
+}
+
+h1 {
+    color: #62b8f7;
+}

@@ -1,0 +1,28 @@
+.quoteContainer {
+  color: #43b7ff;
+  float: right;
+  margin-top: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0vh;    
+}
+.quoteContainer button {
+  width: 90px;
+  font-size: 12px;
+  border-radius: 100px;
+  min-height: 90px;
+  padding: 2px;
+  line-height: 14px;
+  color:white;
+	background: rgb(9,57,149); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(9,57,149,1) 13%, rgba(58,102,153,1) 78%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(9,57,149,1) 13%,rgba(58,102,153,1) 78%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, rgba(9,57,149,1) 13%,rgba(58,102,153,1) 78%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#093995', endColorstr='#3a6699',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	transition: all 0.3s ease,    
+}
+
+.quoteContainer button:hover {
+	font-size: 13px;
+  color: #fdffb1;
+}

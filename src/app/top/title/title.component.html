@@ -1,0 +1,37 @@
+<div class="titleWrapper">
+		<div>
+			<span class="textUp" [@linkToAnimationText]="topLevelTextController" style="letter-spacing: -30px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+				P
+			</span>
+			<span class="titleDownMain">
+				ort
+			</span>
+		</div>
+		<div class="handContainer">
+			<span class="textUp" [@linkToAnimationText]="topLevelTextController" style="letter-spacing: -25px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+				W
+			</span>
+			<div class='handPics' style="opacity: 0;" [@linkToAnimationHand]="stateHand"  >
+				<img class="handTop handSize" src='./assets/hand/handTop.png' alt="animated hand" />
+				<img class="handMiddle handSize bounceIn animated slower" src='./assets/hand/handMiddle2.png' alt="animated hand" />
+				<img class="handBottom handSize bounceIn animated slower" src='./assets/hand/handBottom2.png' alt="animated hand" />
+			</div>
+			<span class="titleDownWeb">
+				eb
+			</span>
+		</div>
+		<div>
+			<span class="textUp" [@linkToAnimationText]="topLevelTextController" style="letter-spacing: -15px;text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+				S
+			</span>
+			<span class="titleDownMain">
+				olutions
+			</span>
+			<div class="subContainerTitle" >
+				<h3 class="subTitle animated slideInRight">Creating digital experiences</h3>
+				<svg class="arrow" [@arrowTrigger]="topLevelTextController" (click)="navigateToAboutArrow(300)" version="1.1" xmlns="http://www.w3.org/2000/svg" width="105" height="54" viewBox="0 0 1005 1024" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); " data-parallax="{&quot;y&quot;:80}">
+					<path stroke="blue" stroke-width="52" stroke-miterlimit="50" stroke-linecap="butt" stroke-linejoin="miter" d="M763.828 459.813l-243.861 246.346 7.538-656.379-138.496-1.653-7.538 656.467-238.15-251.902-100.892 94.514 405.144 428.666 415.001-419.311z"></path>
+				</svg>
+			</div>
+		</div>
+</div>
