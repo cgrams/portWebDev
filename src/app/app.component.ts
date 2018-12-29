@@ -7,7 +7,7 @@ import * as lozad from 'lozad';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.scss', './app.mobile.scss']
 })
 export class AppComponent implements OnInit  {
 	title = 'app';

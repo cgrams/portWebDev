@@ -6,7 +6,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
-  styleUrls: ['./title.component.scss'],
+  styleUrls: ['./title.component.scss', './title.mobile.scss'],
   
   animations: [
     trigger('linkToAnimationText', [
@@ -45,8 +45,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
               style({ opacity: .9, top: '-230px', }),
               style({ opacity: .99, top: '-190px', })
         ]))),
-      transition('*=> antiHand', animate(3000)),
-      transition('*=> proHand', animate(300)),      
+      transition('*=> antiHand', animate(1000)),
+      transition('*=> proHand', animate(1000)),      
     ]),
 
 
