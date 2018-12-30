@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 
 
-
+import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 import * as lozad from 'lozad';
 
 
@@ -37,7 +37,8 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    ParallaxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

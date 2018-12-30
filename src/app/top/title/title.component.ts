@@ -65,10 +65,8 @@ export class TitleComponent implements OnInit {
 
       if (scrollPosition >= componentPosition) {
         this.stateHand = 'antiHand';
-        console.log('should be blue2222');
       } else {
         this.stateHand = 'proHand';
-        console.log('should be red4444');
       }
 
     }

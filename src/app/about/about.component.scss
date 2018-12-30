@@ -1,9 +1,14 @@
 .aboutContainer {
     background: white;
     padding: 10vh 6vw;
-        font-size: 1.4em;
+    font-size: 1.4em;
 }
-
+.aboutContainer article{
+    background:url('../../assets/smallSmudge.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 50vh;
+}
 p.elevatorPitch strong {
     font-size: 1.2em;
     font-weight: 400;

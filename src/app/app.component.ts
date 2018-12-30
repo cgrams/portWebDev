@@ -32,6 +32,9 @@ quoteState = 'proQuote';
  	alert(state);
  };
 ngOnInit(){
+	console.info('%c If you\'re reading this than I\'d love to work with you.', 'font-family:  arial; background: #43b7ff; color: black; font-size: 22pt');
+	console.info('%c Send me a text at 0452 241 945', 'font-family: arial; background: #43b7ff; color: black; font-size: 20pt');
+
 	lozad('.lozad', {
 	    load: function(el) {
 	        el.src = el.dataset.src;
