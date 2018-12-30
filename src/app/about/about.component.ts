@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
+
+import { NgAnimateScrollService } from 'ng-animate-scroll';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
+	ngOnInit(){}
 
 }
