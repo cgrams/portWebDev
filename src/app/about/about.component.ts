@@ -35,9 +35,9 @@ export class AboutComponent implements OnInit {
 		@HostListener('window:scroll', ['$event'])
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
-			    const scrollPosition = window.pageYOffset + 200;
-			    const scrollPosition2 = window.pageYOffset -0;
-			    const scrollPosition3 = window.pageYOffset -60;
+			    const scrollPosition = window.pageYOffset + 400;
+			    const scrollPosition2 = window.pageYOffset + 100;
+			    const scrollPosition3 = window.pageYOffset - 0;
 
 		    	if (scrollPosition >= componentPosition) { this.currentState1 = 'final'; } else { this.currentState1 = 'initial';}
 		    	if (scrollPosition2 >= componentPosition) { this.currentState2 = 'final'; } else { this.currentState2 = 'initial';}

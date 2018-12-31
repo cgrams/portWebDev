@@ -15,3 +15,73 @@ h3{
     padding: 10vh 6vw;
     font-size: 1.4em;
 }
+
+img {
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.picsContainerProjects article img {
+    width: 370px;
+    height: 400px;
+    margin: 0;
+    padding: 0;    
+}
+.picsContainerProjects{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+} 
+article.thumb.middlePic {
+    position: relative;
+    top: -150px;
+} 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.border-button {
+  border: solid 10px #43b7ff;
+  margin: 0.1em;
+  transition: -webkit-clip-path 0.3s linear;
+  transition: clip-path 0.3s linear;
+  transition: clip-path 0.3s linear, -webkit-clip-path 0.3s linear;
+  -webkit-clip-path: polygon(
+    calc(0% + 5px) 
+    calc(0% + 5px), 
+
+    calc(100% - 5px) 
+    calc(0% + 5px), 
+
+    calc(100% - 5px) 
+    calc(100% - 5px), 
+
+    calc(0% + 5px) 
+    calc(100% - 5px)
+    );
+          clip-path: polygon(
+    calc(0% + 5px) 
+    calc(0% + 5px), 
+
+    calc(100% - 5px) 
+    calc(0% + 5px), 
+
+    calc(100% - 5px) 
+    calc(100% - 5px), 
+
+    calc(0% + 5px) 
+    calc(100% - 5px)
+    );
+}
+.border-button:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
