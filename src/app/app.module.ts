@@ -20,6 +20,7 @@ import { TitleComponent } from './top/title/title.component';
 import { DeepBlueComponent } from './services/deep-blue/deep-blue.component';
 import { QuoteComponent } from './quote/quote.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AboutComponent } from './about/about.component';
     TitleComponent,
     DeepBlueComponent,
     QuoteComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

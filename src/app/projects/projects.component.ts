@@ -51,10 +51,9 @@ export class ProjectsComponent implements OnInit {
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
 			    const scrollPosition3 = window.pageYOffset + 100;
-			    if (scrollPosition3 >= componentPosition) { this.picState1  = 'final2'; console.log(2222); } else { this.picState1  = 'initial2'; console.log("ZZZZZ");}
+			    if (scrollPosition3 >= componentPosition) { this.picState1  = 'final2'; } else { this.picState1  = 'initial2'; }
 		    	if (scrollPosition3 >= componentPosition) { this.picState  = 'final'; } else { this.picState  = 'initial';}
 			}
-
 
 
   ngOnInit() {

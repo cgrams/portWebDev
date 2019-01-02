@@ -43,7 +43,6 @@ export class AboutComponent implements OnInit {
 		    	if (scrollPosition2 >= componentPosition) { this.currentState2 = 'final'; } else { this.currentState2 = 'initial';}
 		    	if (scrollPosition3 >= componentPosition) { this.currentState3 = 'final'; } else { this.currentState3 = 'initial';}
 
- 
 	}
 
 	constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService){}

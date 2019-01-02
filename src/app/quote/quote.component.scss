@@ -27,4 +27,7 @@
 .quoteContainer button:hover {
 	font-size: 13px;
   color: #fdffb1;
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(51,51,51,0.57);
+-moz-box-shadow: 1px 1px 4px 2px rgba(51,51,51,0.57);
+box-shadow: 1px 1px 4px 2px rgba(51,51,51,0.57);
 }
