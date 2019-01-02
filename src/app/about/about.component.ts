@@ -19,8 +19,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 	      background: '#62b8f7',
 		  textShadow: '-1px -1px 0 #0c0c0c, 1px -1px 0 #0c0c0c, -1px 1px 0 #0c0c0c, 1px 1px 0 #0c0c0c'
 	    })),
-	    transition('initial=>final', animate('400ms')),
-	    transition('final=>initial', animate('300ms'))
+	    transition('initial=>final', animate('400ms ease-in-out')),
+	    transition('final=>initial', animate('300ms ease-in-out'))
 	  ]),
 	]
 

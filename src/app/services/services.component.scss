@@ -1,9 +1,29 @@
+h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3em;
+    color: white;
+}
+
+li.itemSolution {
+    color: white;
+    list-style: none;
+    font-size: 5vh;
+    line-height: 10vh;
+}
+
+
+.servicesContainer{
+    padding: 10vh 6vw;
+}
+
+
 ::selection{background-color: salmon; color: white;}
 .parallax > use{
-  animation:move-forever 22s linear infinite;
-  &:nth-child(1){animation-delay:-20s;}
-  &:nth-child(2){animation-delay:-14s; animation-duration:55s}
-  &:nth-child(3){animation-delay:-1s; animation-duration:33s}
+  animation:move-forever 52s linear infinite;
+  &:nth-child(1){animation-delay:-60s;}
+  &:nth-child(2){animation-delay:-34s; animation-duration:55s}
+  &:nth-child(3){animation-delay:+10s; animation-duration:23s}
 }
 
 @keyframes move-forever{

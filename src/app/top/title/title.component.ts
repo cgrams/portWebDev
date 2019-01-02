@@ -24,12 +24,12 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
     ]),
   trigger('arrowTrigger', [
       state('proPopUp', style({
-        paddingTop: '50px',
-        opacity: 1
+        marginTop: '50px',
+        position: 'relative'
       })),
       state('antiPopUp', style({
-        paddingTop: '10px',
-        opacity: 1
+        marginTop: '10px',
+        position: 'relative'
       })),
       transition('*=> proPopUp', animate('2000ms ease-in' )),
       transition('*=> antiPopUp', animate('3000ms ease')),
@@ -45,8 +45,8 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
               style({ opacity: .9, top: '-230px', }),
               style({ opacity: .99, top: '-190px', })
         ]))),
-      transition('*=> antiHand', animate(1000)),
-      transition('*=> proHand', animate(1000)),      
+      transition('*=> antiHand', animate('1000ms ease-in-out')),
+      transition('*=> proHand', animate('1000ms ease-in-out')),      
     ]),
 
 
