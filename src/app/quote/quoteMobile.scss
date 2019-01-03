@@ -1,0 +1,18 @@
+@media screen and (max-width: 992px) {
+	.quoteContainer{
+		display: none;
+	}
+
+	.mobileQuote{
+		display: block;
+	}
+}
+@media screen and (min-width: 993px) {
+	.quoteContainer{
+		display: block;
+	}
+
+	.mobileQuote{
+		display: none;
+	}
+}

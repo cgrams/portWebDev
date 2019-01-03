@@ -10,13 +10,7 @@ import * as lozad from 'lozad';
     styleUrls: ['./app.component.scss', './app.mobile.scss']
 })
 export class AppComponent implements OnInit  {
-	title = 'app';
- 
-
-  reason = '';
-
-  
-
+	reason = '';
 
 	topHandStateVariable = 'proHandstate';
 	moveHand(state: any) { this.topHandStateVariable = state; }

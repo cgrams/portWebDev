@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.scss'],
+  styleUrls: ['./quote.component.scss', './quoteMobile.scss'],
 
   animations: [
   	trigger('changeQuoteState', [

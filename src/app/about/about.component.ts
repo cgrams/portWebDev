@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
 import { NgAnimateScrollService } from 'ng-animate-scroll';
 
@@ -19,7 +19,15 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 	      background: '#62b8f7',
 		  textShadow: '-1px -1px 0 #0c0c0c, 1px -1px 0 #0c0c0c, -1px 1px 0 #0c0c0c, 1px 1px 0 #0c0c0c'
 	    })),
-	    transition('initial=>final', animate('400ms ease-in-out')),
+	    transition('initial=>final', animate('400ms 100ms ease-in-out',
+
+	    keyframes([
+              style({ background: "white", top: '-5px', }),
+              style({background: "#7fc2f3", top: '-2px', }),
+              style({ background: "#62b8f7", top: '0px', })
+        	])
+
+        )),
 	    transition('final=>initial', animate('300ms ease-in-out'))
 	  ]),
 	]
@@ -35,7 +43,7 @@ export class AboutComponent implements OnInit {
 		@HostListener('window:scroll', ['$event'])
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
-			    const scrollPosition = window.pageYOffset + 400;
+			    const scrollPosition = window.pageYOffset + 300;
 			    const scrollPosition2 = window.pageYOffset + 100;
 			    const scrollPosition3 = window.pageYOffset - 0;
 
