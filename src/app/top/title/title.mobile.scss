@@ -7,14 +7,20 @@
 	.titleWrapper{ display: none; }
 
 	div.titleWrapperMobile{
-		display: flex;
+	    display: grid;
+    	width: 100%;
+    	grid-template-columns: 100%;
+	}
+
+	section.coolMobileTitle {
+	 	display: flex;
 	    width: 100%;
 	    align-items: baseline;
 	    justify-content: space-around;
 	}
 
 	.titleWrapperMobile div {
-    	width: 33%;
+    	width: 100%;
 	}
 }
 

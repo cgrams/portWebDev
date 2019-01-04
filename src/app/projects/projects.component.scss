@@ -1,4 +1,4 @@
-h3{
+ h3{
     display: block;
     font-size: 1.17em;
     margin-block-start: 1em;
@@ -14,7 +14,7 @@ h3{
 .projectsContainer{
     padding: 10vh 6vw;
     font-size: 1.4em;
-        height: 140vh;
+    height: 140vh;
 }
 h3 {
     text-align: center;
@@ -33,10 +33,13 @@ img:hover {
     filter: grayscale(0%);
 }
 .picsContainerProjects article img {
-    width: 370px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0;    
+    padding: 1%;    
+}
+.picsContainerProjects article {
+    margin: 10%;
 }
 .picsContainerProjects{
     display: flex;

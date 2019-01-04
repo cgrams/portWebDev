@@ -43,6 +43,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
             keyframes([
               style({ opacity: .5, top: '-120px', }),
               style({ opacity: .9, top: '-230px', }),
+              style({ opacity: .99, top: '-180px', }),              
               style({ opacity: .99, top: '-190px', })
         ]))),
       transition('*=> antiHand', animate('1000ms ease-in-out')),
