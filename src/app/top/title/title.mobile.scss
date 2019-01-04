@@ -1,21 +1,27 @@
-@media screen and (min-width: 1051px) {
+@media screen and (min-width: 991px) {
+	.titleWrapperMobile{ display: none; }
+}
 
-	#hiddenTextweb{
-		display: none;
+
+@media screen and (max-width: 992px) {
+	.titleWrapper{ display: none; }
+
+	div.titleWrapperMobile{
+		display: flex;
+	    width: 100%;
+	    align-items: baseline;
+	    justify-content: space-around;
 	}
 
+	.titleWrapperMobile div {
+    	width: 33%;
+	}
 }
+
+
 
 @media screen and (max-width: 1350px) and (min-width: 1051px) {
-
-.titleDownWeb{
-    top: 103px;
-}
-
-	.titleDownWeb{
-		display: block;
-	}
-
+	.titleDownWeb{ top: 103px; }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -26,15 +32,5 @@
 	div.titleWrapper{
 	    grid-template-columns: 18% 27% 45%;
 	}
-	.handPics{
-    	display: none;
-	}
-	#hiddenTextweb{
-		display: contents;
-	}
-.titleDownWeb{
-	display: none;
-}
-}
 
-
+}

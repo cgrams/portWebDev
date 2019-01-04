@@ -13,7 +13,7 @@ h3 {
     background:url('../../assets/smallSmudge.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-bottom: 50vh;
+    padding-bottom: 30vh;
 }
 p.elevatorPitch strong {
     font-size: 1.2em;
@@ -22,3 +22,18 @@ p.elevatorPitch strong {
     padding: 0 3px;
     position: relative;
 }
+
+.sideArrow{
+    background:url('../../assets/arrowMin.svg');
+    background-size: 12%;
+    background-repeat: no-repeat;
+    width: 130vw;
+    height: 150vh;
+    -webkit-transform: rotate(-450deg);
+    transform: rotate(-90deg);
+    padding: 0;
+    bottom: 100;
+    left: -0px;
+    position: absolute;
+    z-index: 0;
+    }
