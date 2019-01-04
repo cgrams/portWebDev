@@ -28,10 +28,10 @@ li.itemSolution {
 
 ::selection{background-color: salmon; color: white;}
 .parallax > use{
-  animation:move-forever 52s linear infinite;
-  &:nth-child(1){animation-delay:-60s;}
-  &:nth-child(2){animation-delay:-34s; animation-duration:55s}
-  &:nth-child(3){animation-delay:+10s; animation-duration:23s}
+  animation:move-forever 152s linear infinite;
+  &:nth-child(1){animation-delay:-130s;}
+  &:nth-child(2){animation-delay:+104s; animation-duration:55s}
+  &:nth-child(3){animation-delay:+90s; animation-duration:23s}
 }
 
 @keyframes move-forever{

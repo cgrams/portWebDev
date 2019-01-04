@@ -1,19 +1,40 @@
+@media screen and (min-width: 1051px) {
+
+	#hiddenTextweb{
+		display: none;
+	}
+
+}
+
 @media screen and (max-width: 1350px) and (min-width: 1051px) {
 
 .titleDownWeb{
     top: 103px;
 }
 
+	.titleDownWeb{
+		display: block;
+	}
+
 }
 
 @media only screen and (max-width: 1050px) {
+	.titleDownWeb{
+	    top: 80px;
+	}
 
+	div.titleWrapper{
+	    grid-template-columns: 18% 27% 45%;
+	}
+	.handPics{
+    	display: none;
+	}
+	#hiddenTextweb{
+		display: contents;
+	}
 .titleDownWeb{
-    top: 80px;
+	display: none;
+}
 }
 
-div.titleWrapper{
-    grid-template-columns: 18% 27% 45%;
-}
 
-}
