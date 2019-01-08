@@ -1,19 +1,28 @@
 <div class="projectsContainer">
 	<h3>Previously Created Experiences</h3>
 	<div class="picsContainerProjects">
+		<div class="skillsProjectsContainer">
+		<h4>Skills Employed on these websites...</h4>
+		 <ul class="projectSkills">
+		  <li *ngFor="let oneSkill of projectSkillsList">
+		    {{ oneSkill.ability }}
+		  </li>
+		 </ul>
+		</div>
+
 		<a href="https://www.agribin.com.au/" target="_blank">
 			<article class="thumb centerLoanImage" [@picProjectIn]=picState1>
-				<img class="lozad border-button" data-src=".././assets/experiences/squareAgribin.png" />
+				<img class="lozad border-button" data-src=".././assets/experiences/dynamic-content.png" alt="An example of dynamicly crafted website that engages users"/>
 			</article>
 		</a>
 		<a href="http://cyanergy.com.au/" target="_blank">
 			<article class="thumb middlePic" [@picProjectIn]=picState>
-				<img class="lozad border-button" data-src=".././assets/experiences/squareCyanergy.png" />
+				<img class="lozad border-button" data-src=".././assets/experiences/online-store.png" alt="A complex online-store with a payment gateway and products" />
 			</article>
 		</a>
 		<a href="https://www.abbottbuild.com.au/" target="_blank">
 			<article class="thumb" [@picProjectIn]=picState1>
-				<img class="lozad border-button" data-src=".././assets/experiences/squareAbbotBuild.png" />
+				<img class="lozad border-button" data-src=".././assets/experiences/engaging-code.png" alt="An SEO optimised website for Search Engines" />
 			</article>
 		</a>
 	</div>

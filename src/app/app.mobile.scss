@@ -1,37 +1,27 @@
 @media only screen and (max-width: 1350px) {
-.topWrapper[_ngcontent-c2] {
-    padding: 0 6% 0 6%;
-    height: 105vh;
-}
+	.topWrapper {
+	    padding: 0 6% 0 6%;
+	    height: 105vh;
+	}
 }
 
 @media screen and (max-width: 992px) {
-	.quoteContainer{
-		display: none;
-	}
-
+	.quoteContainer{ display: none; }
 	.mobileQuote{
 		display: block;
+  		position: -webkit-sticky;
+  		position: sticky;
+		top:0;
+		z-index:99;
+		width: 100%;
+		background: white;
+		color: black;
+		text-decoration: none;
+		padding-top: 3px;
+		text-align: center;		
 	}
 }
 @media screen and (min-width: 993px) {
-	.quoteContainer{
-		display: block;
-	}
-
-	.mobileQuote{
-		display: none;
-	}
-}
-
-.mobileQuote{
-	position: sticky;
-	top:0;
-	z-index:99;
-	width: 100%;
-	background: white;
-	color: black;
-	text-decoration: none;
-	padding-top: 3px;
-	text-align: center;
+	.quoteContainer{ display: block; }
+	.mobileQuote{ display: none;}
 }

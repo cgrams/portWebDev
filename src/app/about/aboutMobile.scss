@@ -1,6 +1,17 @@
 @media screen and (max-width: 992px) {
     .sideArrow{
-        width: 130vw;
-        height: 150vh;
+        width: 100%;
+        height: 130vh;
+        -webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
         }
+
+        h3{
+        	font-size: 2em;
+        }
+
+.aboutContainer  article {
+ 
+    padding-bottom: 15vh;
+}        
 }

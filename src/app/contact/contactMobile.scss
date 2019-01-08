@@ -1,0 +1,13 @@
+@media screen and (max-width: 992px) {
+  .bigquote{
+    font-size: 5em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .bigquote{
+    font-family: 'Alex Brush', cursive;
+    font-size: 3em;
+  }
+}

@@ -9,14 +9,18 @@
 	div.titleWrapperMobile{
 	    display: grid;
     	width: 100%;
-    	grid-template-columns: 100%;
+    	grid-template-columns: 50% 50% ;
 	}
-
+	.textUp {
+    font-size: 12vw;
+    padding-right: 2px;
+    margin-left: 15px;
+	}
+.titleDownMain {
+    font-size: 8vw;
+}
 	section.coolMobileTitle {
-	 	display: flex;
 	    width: 100%;
-	    align-items: baseline;
-	    justify-content: space-around;
 	}
 
 	.titleWrapperMobile div {

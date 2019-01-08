@@ -3,10 +3,14 @@ h3 {
     margin-bottom: 50px;
     font-size: 3em;
 }
+ul.listOfQualities li strong{
+    text-decoration: underline;
+    line-height: 1.5;
+}
 
 .aboutContainer {
     background: white;
-    padding: 10vh 6vw;
+    padding: 10vh 6vw 6vh 6vw;
     font-size: 1.4em;
 }
 .aboutContainer article{

@@ -3,12 +3,8 @@ aside.blurb {
     text-align: center;
 }
 h3.contactTtitle {
-
-    text-align: center;
-    font-size: 3em;
-    color: #f4f4f4;
-    text-shadow: -1px -1px 0 #0c0c0c, 1px -1px 0 #0c0c0c, -1px 1px 0 #0c0c0c, 1px 1px 0 #0c0c0c;
-
+  text-align: center;
+  font-size: 3em;
 }
 ul.portMac {
     font-size: 3em;
@@ -16,21 +12,27 @@ ul.portMac {
     list-style: none;
 }
 ul.listOfContacts {
-    color: #43b7ff;
-    list-style: none;
-    font-size: 1.5em;
+  color: #43b7ff;
+  list-style: none;
+  font-size: 1.5em;
 }
 .thinkingSection{
-      height: 80vh;  
-          background: white;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
+  height: 80vh;  
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .bigquote{
-font-family: 'Alex Brush', cursive;
-    font-size: 8em;
-    width: 800px;
-    padding: .8em;
-    margin: 0 auto;
+  font-family: 'Alex Brush', cursive;
+  font-size: 8em;
+  width: 800px;
+  padding: .8em;
+}
+.questionMark{
+  position: relative;
+  right: 14px;
+}
+.centerButtonQuote{
+  margin: 0 auto;
 }

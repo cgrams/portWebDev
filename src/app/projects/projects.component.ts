@@ -8,7 +8,7 @@ import * as lozad from 'lozad';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'],
+  styleUrls: ['./projects.component.scss', './projectsMobile.scss'],
 
 	animations: [
 	  trigger('picProjectIn', [
@@ -54,6 +54,34 @@ export class ProjectsComponent implements OnInit {
 			    if (scrollPosition3 >= componentPosition) { this.picState1  = 'final2'; } else { this.picState1  = 'initial2'; }
 		    	if (scrollPosition3 >= componentPosition) { this.picState  = 'final'; } else { this.picState  = 'initial';}
 			}
+
+projectSkillsList: any[] = [
+    {
+      "ability": "UI/UX,"
+    },
+    {
+      "ability": "Web Design,"
+    },
+    {
+      "ability": "Mobile Design,"
+    },
+    {
+      "ability": "Web Development,"
+    },
+    {
+      "ability": "Mobile App,"
+    },
+    {
+      "ability": "eCommerce,"
+    },
+    {
+      "ability": "Digital Marketing,"
+    },
+    {
+      "ability": "Startups."
+    }
+  ];
+ 
 
 
   ngOnInit() {
