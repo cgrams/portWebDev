@@ -55,12 +55,14 @@ img:hover {
 .picsContainerProjects article {
     margin: 10%;
 }
-.picsContainerProjects{
+.picsContainerProjects {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.threePreviousWork {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-} 
+}
 article.thumb.middlePic {
     position: relative;
     top: -150px;

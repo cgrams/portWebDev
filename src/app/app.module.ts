@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
@@ -21,6 +22,8 @@ import { DeepBlueComponent } from './services/deep-blue/deep-blue.component';
 import { QuoteComponent } from './quote/quote.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSidenavModule,
-    ParallaxModule
+    MatTooltipModule,
+    ParallaxModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
