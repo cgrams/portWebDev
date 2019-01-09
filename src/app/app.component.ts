@@ -1,42 +1,63 @@
-import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 import * as lozad from 'lozad';
 
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss', './app.mobile.scss']
+	selector: 'app-root',
+	templateUrl: './app.component.html',
+	styleUrls: ['./app.component.scss', './app.mobile.scss'],
+	animations: [
+	  trigger('changeMobileQuote', [
+	    state('proMobileQuoteSate', style({
+			fontSize: '1.3em'
+	    })),
+	    state('anitMobileQuoteSate', style({
+	    	fontSize: '1em'
+	    })),
+	    transition('proMobileQuoteSate => anitMobileQuoteSate', animate('250ms ease-in-out')),
+	    transition('anitMobileQuoteSate => proMobileQuoteSate', animate('250ms ease-in-out'))
+	  ]),
+	]
+
 })
 export class AppComponent implements OnInit  {
 	reason = '';
 
+currentState = 'initial';
+changeState() {
+  this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+}
 	topHandStateVariable = 'proHandstate';
 	moveHand(state: any) { this.topHandStateVariable = state; }
 
 	topQuoteStateVariable = 'proQuotestate';
 	moveQuote(state: any) { this.topQuoteStateVariable = state; }
 
-constructor() { }
- 
-quoteState = 'proQuote';
- testQuote(state){
- 	this.quoteState = state
- 	alert(state);
- };
-ngOnInit(){
-	console.info('%c If you\'re reading this than I\'d love to work with you.', 'font-family:  arial; background: #43b7ff; color: black; font-size: 22pt');
-	console.info('%c Send me a text at 0452 241 945', 'font-family: arial; background: #43b7ff; color: black; font-size: 20pt');
 
-	lozad('.lozad', {
-	    load: function(el) {
+quoteMobileState = 'proMobileQuoteSate'
+
+	constructor(public el: ElementRef){}
+	@HostListener('window:scroll', ['$event'])
+	changeQuoteCSS(){
+		const componentPosition = this.el.nativeElement.offsetTop;
+		const scrollPositionMobileQuote = window.pageYOffset - 100;
+		if (scrollPositionMobileQuote >= componentPosition) { this.quoteMobileState = 'anitMobileQuoteSate';} else { this.quoteMobileState = 'proMobileQuoteSate';}
+	}
+
+
+	quoteState = 'proQuote';
+	
+	ngOnInit(){
+		console.info('%c If you\'re reading this than I\'d love to work with you.', 'font-family:  arial; background: #43b7ff; color: black; font-size: 22pt');
+		console.info('%c Send me a text at 0452 241 945', 'font-family: arial; background: #43b7ff; color: black; font-size: 20pt');
+		lozad('.lozad', {
+	    	load: function(el) {
 	        el.src = el.dataset.src;
-	        el.onload = function() {
-	            el.classList.add('fade')
-	        }
-	    }
-	}).observe()
+	        el.onload = function() { el.classList.add('fade') }
+	    	}
+		}).observe()
 	}
   
 }
