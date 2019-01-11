@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit, Input, HostListener, ElementRef , Inject} from '@angular/core';
 import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
 import { NgAnimateScrollService } from 'ng-animate-scroll';
@@ -57,13 +58,13 @@ export class AboutComponent implements OnInit {
 		@HostListener('window:scroll', ['$event'])
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
-			    const scrollPosition = window.pageYOffset + 200;
-			    const scrollPosition2a = window.pageYOffset + 0;
-			    const scrollPosition2b = window.pageYOffset + -30;
-				const scrollPosition2c = window.pageYOffset + -60;
-				const scrollPosition2d = window.pageYOffset - 80;
+			    const scrollPosition = this.window.pageYOffset + 200;
+			    const scrollPosition2a = this.window.pageYOffset + 0;
+			    const scrollPosition2b = this.window.pageYOffset + -30;
+				const scrollPosition2c = this.window.pageYOffset + -60;
+				const scrollPosition2d = this.window.pageYOffset - 80;
 
-			    const scrollPosition3 = window.pageYOffset - 110;
+			    const scrollPosition3 = this.window.pageYOffset - 110;
 
 		    	if (scrollPosition >= componentPosition) { this.currentState1 = 'final'; }  
 		    	
@@ -76,7 +77,7 @@ export class AboutComponent implements OnInit {
 
 	}
 
-	constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
+	constructor(@Inject(WINDOW) private window: Window, public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
 	ngOnInit(){}
 
 	objDate = Date.now(); 

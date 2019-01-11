@@ -5,13 +5,19 @@
     }
 
 	.picsContainerProjects{
+        display: flex;
 	    flex-direction: column;
 	}
 
 .projectsContainer{
     padding: 10vh 6vw;
     font-size: 1.4em;
-    height: 350vh;
+    height: 130vh;
+}
+
+.threePreviousWork {
+    display: flex;
+    flex-direction: column;
 }
 
 }

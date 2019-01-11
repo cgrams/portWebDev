@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit, Input, HostListener, ElementRef , Inject} from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 import { NgAnimateScrollService } from 'ng-animate-scroll';
@@ -10,7 +11,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 })
 export class TopComponent implements OnInit {
 
-	constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService) { }
+	constructor(@Inject(WINDOW) private window: Window, public el: ElementRef, private animateScrollService: NgAnimateScrollService) { }
 
 	navigateToWork(duration?:number) { this.animateScrollService.scrollToElement('work', duration) };
 	navigateToServices(duration?:number){this.animateScrollService.scrollToElement('services', duration) };
@@ -25,7 +26,7 @@ export class TopComponent implements OnInit {
 	@HostListener('window:scroll', ['$event'])
 	    checkScroll() {
 		    const componentPosition = this.el.nativeElement.offsetTop;
-		    const scrollPosition = window.pageYOffset -10;
+		    const scrollPosition = this.window.pageYOffset -10;
 	    	if (scrollPosition >= componentPosition) {
 	     		this.textChangeVariable = 'proPopUp';
 	    	} else {

@@ -1,0 +1,13 @@
+{
+  "universal": {
+    "skipInstall": false,
+    "directory": ".",
+    "http": true,
+    "project": "portmacquariewebdev"
+  },
+  "pwa": {
+    "directory": ".",
+    "skipInstall": true,
+    "project": "portmacquariewebdev"
+  }
+}

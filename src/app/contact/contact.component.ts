@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit, Input, HostListener, ElementRef , Inject} from '@angular/core';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
@@ -35,7 +36,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 })
 export class ContactComponent implements OnInit {
  
-  constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
+  constructor(@Inject(WINDOW) private window: Window, public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
   currentState = 'initial';
   startThinking = "proThinking";
   hiddenMail = "";
@@ -43,11 +44,11 @@ export class ContactComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
 		changeState() {
 			const componentPosition = this.el.nativeElement.offsetTop;
-			const scrollPosition3 = window.pageYOffset + 100;
+			const scrollPosition3 = this.window.pageYOffset + 100;
 		  if (scrollPosition3 >= componentPosition) { this.currentState  = 'final'; this.hiddenMail = "admin@portwebsolutions.com.au";} else { this.currentState  = 'initial'; this.hiddenMail = "admin@portwebsolotions.com.au";}
       
       const thinkingPosition = this.el.nativeElement.offsetTop;
-      const scrollPositionText = window.pageYOffset + 400;
+      const scrollPositionText = this.window.pageYOffset + 400;
       if (scrollPositionText >= thinkingPosition) { this.startThinking  = 'antiThinking'}
      }
  

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit, Input, HostListener, ElementRef , Inject} from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 import { NgAnimateScrollService } from 'ng-animate-scroll';
@@ -42,7 +43,7 @@ import * as lozad from 'lozad';
 })
 export class ProjectsComponent implements OnInit {
 
-	constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
+	constructor(@Inject(WINDOW) private window: Window, public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
 
 		picState = 'initial';
 		picState1 = 'initial2';
@@ -50,7 +51,7 @@ export class ProjectsComponent implements OnInit {
 		@HostListener('window:scroll', ['$event'])
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
-			    const scrollPosition3 = window.pageYOffset + 100;
+			    const scrollPosition3 = this.window.pageYOffset + 100;
 			    if (scrollPosition3 >= componentPosition) { this.picState1  = 'final2'; } else { this.picState1  = 'initial2'; }
 		    	if (scrollPosition3 >= componentPosition) { this.picState  = 'final'; } else { this.picState  = 'initial';}
 			}

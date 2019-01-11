@@ -1,5 +1,12 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { RouterModule } from '@angular/router';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
@@ -38,8 +45,14 @@ import { environment } from '../environments/environment';
     AboutComponent,
     ContactComponent
   ],
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+  NgtUniversalModule,
+ BrowserModule.withServerTransition({appId: 'my-app'}),
+ TransferHttpCacheModule,
+HttpClientModule,
+ 
+    
     BrowserAnimationsModule,
     MatButtonModule,
     MatSidenavModule,
@@ -48,6 +61,5 @@ import { environment } from '../environments/environment';
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }

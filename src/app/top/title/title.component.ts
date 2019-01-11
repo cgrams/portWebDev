@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener, ElementRef   } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit, Input, HostListener, ElementRef   , Inject} from '@angular/core';
 import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
 
 import { NgAnimateScrollService } from 'ng-animate-scroll';
@@ -57,12 +58,12 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 })
 export class TitleComponent implements OnInit {
   stateHand = 'proHand'
-  constructor(private animateScrollService: NgAnimateScrollService, public el: ElementRef) { }
+  constructor(@Inject(WINDOW) private window: Window, private animateScrollService: NgAnimateScrollService, public el: ElementRef) { }
 
 @HostListener('window:scroll', ['$event'])
     checkScroll() {
       const componentPosition = this.el.nativeElement.offsetTop + 20
-      const scrollPosition = window.pageYOffset
+      const scrollPosition = this.window.pageYOffset
 
       if (scrollPosition >= componentPosition) {
         this.stateHand = 'antiHand';

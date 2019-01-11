@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, HostListener, ElementRef  } from '@angular/core';
+import { WINDOW } from '@ng-toolkit/universal';
+import { Component, OnInit, Input, HostListener, ElementRef  , Inject} from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -25,12 +26,12 @@ import { MatButtonModule } from '@angular/material/button';
 export class QuoteComponent implements OnInit {
 
 	stateQuote = 'proQuotestate'
-	constructor(public el: ElementRef) { }
+	constructor(@Inject(WINDOW) private window: Window, public el: ElementRef) { }
 
 @HostListener('window:scroll', ['$event'])
     checkScroll() {
       const componentPosition = this.el.nativeElement.offsetTop + 20
-      const scrollPosition = window.pageYOffset
+      const scrollPosition = this.window.pageYOffset
       if (scrollPosition >= componentPosition) { this.stateQuote = 'antiQuotestate'; } 
         else { this.stateQuote = 'proQuotestate'; }
 
