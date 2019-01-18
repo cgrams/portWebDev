@@ -3,7 +3,7 @@
 	 <ul class="solutionsList">
 
 	  <li *ngFor="let servicesExamples of move; let i = index" class="itemSolution">
-	    <span class="starMove{{i}}">&#9733; {{ servicesExamples.name }}</span>
+	    <span class="starMove{{i}}">&#9733; {{ servicesExamples.name }}</span> <span class="serviceExplaination">{{ servicesExamples.serviceExplaination }}</span>
 	  </li>
 
 	 </ul>

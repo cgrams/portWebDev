@@ -7,7 +7,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 @Component({
   selector: 'app-top',
   templateUrl: './top.component.html',
-  styleUrls: ['./top.component.scss', './top.mobile.scss']
+  styleUrls: ['./top.component.scss', './tablet.scss' ,'./topPageMobile.scss']
 })
 export class TopComponent implements OnInit {
 

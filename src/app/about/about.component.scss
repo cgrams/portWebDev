@@ -10,22 +10,28 @@ ul.listOfQualities li strong{
     line-height: 1.5;
     padding: 0 4px;
 }
-
+ul.listOfQualities {
+    list-style: none;
+}
 .aboutContainer {
-    background: white;
-    padding: 10vh 6vw 6vh 6vw;
-    font-size: 1.4em;
-}
-.aboutContainer article{
-    background:url('../../assets/smallSmudge.png');
-    background-size: 100%;
+    background:url('../../assets/softStarRipple2.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 25vh;
+    padding: 10vh 6vw 0vh 6vw;
+    font-size: 1.8em;
+    height: 180vh;
 }
-p.elevatorPitch strong {
-    font-size: 1.2em;
-    font-weight: 400;
-    letter-spacing: 1px;
+
+.metaaboutContainer {
+    height: 220vh;
+    padding-top: 0px;
+    background: white;
+}
+
+p.elevatorPitch strong, .listPitch {
+    font-size: 1.1em;
+    font-weight: 100;
+    letter-spacing: 2px;
     padding: 0 3px;
     position: relative;
 }

@@ -3,11 +3,22 @@
     font-size: 5em;
     width: 100%;
   }
+	.bottomContact{
+	    background: black;
+	}
+
 }
 
 @media screen and (max-width: 625px) {
   .bigquote{
     font-family: 'Alex Brush', cursive;
     font-size: 3em;
+  }
+  ul.listOfContacts{
+      font-size: 1.2em;
+  }
+  ul.portMac {
+    position: relative;
+    z-index: 9;
   }
 }

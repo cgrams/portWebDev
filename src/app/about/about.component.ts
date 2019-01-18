@@ -17,11 +17,10 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 	    })),
 	    state('final', style({
 	      color: '#f4f4f4',
-	      
-	      background: 'radial-gradient(ellipse at center, #1e5799 0%,#207cca 0%,#2989d8 50%,#7db9e8 100%)',
-		  textShadow: '-1px -1px 0 #0c0c0c, 1px -1px 0 #0c0c0c, -1px 1px 0 #0c0c0c, 1px 1px 0 #0c0c0c'
+	      background: 'none',
+		  textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
 	    })),
-	    transition('initial=>final', animate('400ms 100ms ease-in-out',
+	    transition('initial=>final', animate('1000ms 100ms ease-in-out',
 
 	    keyframes([
               style({ background: "white", top: '-12px', }),
@@ -38,7 +37,7 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
         	])
 
         	)),
-	    transition('final=>initial', animate('300ms ease-in-out'))
+	    transition('final=>initial', animate('600ms ease-in-out'))
 	  ]),
 	]
 
@@ -48,30 +47,34 @@ export class AboutComponent implements OnInit {
 
 	currentState1 = 'initial';
 	
-	currentState2a = 'initial';
-	currentState2b = 'initial';
-	currentState2c = 'initial';
-	currentState2d = 'initial';
+	listWebbies = {
+			currentState2a: 'initial',
+			currentState2b: 'initial',
+			currentState2c: 'initial',
+			currentState2d: 'initial',
+	}
+	
+	arrowHide=true;
 	
 	currentState3 = 'initial3';
 
 		@HostListener('window:scroll', ['$event'])
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
-			    const scrollPosition = this.window.pageYOffset + 200;
-			    const scrollPosition2a = this.window.pageYOffset + 0;
-			    const scrollPosition2b = this.window.pageYOffset + -30;
-				const scrollPosition2c = this.window.pageYOffset + -60;
-				const scrollPosition2d = this.window.pageYOffset - 80;
+			    const scrollPosition = this.window.pageYOffset + 0;
+			    const scrollPosition2a = this.window.pageYOffset - 300;
+			    const scrollPosition2b = this.window.pageYOffset - 400;
+				const scrollPosition2c = this.window.pageYOffset - 500;
+				const scrollPosition2d = this.window.pageYOffset - 600;
 
-			    const scrollPosition3 = this.window.pageYOffset - 110;
+			    const scrollPosition3 = this.window.pageYOffset - 800;
 
 		    	if (scrollPosition >= componentPosition) { this.currentState1 = 'final'; }  
 		    	
-		    	if (scrollPosition2a >= componentPosition) { this.currentState2a = 'final'; }  
-		    	if (scrollPosition2b >= componentPosition) { this.currentState2b = 'final'; }  
-		    	if (scrollPosition2c >= componentPosition) { this.currentState2c = 'final'; }  
-		    	if (scrollPosition2d >= componentPosition) { this.currentState2d = 'final'; }  
+		    	if (scrollPosition2a >= componentPosition) { this.listWebbies.currentState2a = 'final'; this.arrowHide=false;} 
+		    	if (scrollPosition2b >= componentPosition) { this.listWebbies.currentState2b = 'final'; }
+		    	if (scrollPosition2c >= componentPosition) { this.listWebbies.currentState2c = 'final'; } 
+		    	if (scrollPosition2d >= componentPosition) { this.listWebbies.currentState2d = 'final'; }
 
 		    	if (scrollPosition3 >= componentPosition) { this.currentState3 = 'final'; }  
 

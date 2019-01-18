@@ -1,43 +1,49 @@
-<div class="metaContactContainer">
- 
-		<div class="thinkingSection">
-			<h3 class="contactTtitle" >Thinking of a Project or Partnership
-
-				<span class="questionMark" >
-					<svg [@changeThinkingColors]=startThinking xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
-					  <path d="M10.06 1C13 1 15 2.89 15 5.53a4.59 4.59 0 0 1-2.29 4.08c-1.42.92-1.82 1.53-1.82 2.71V13H8.38v-.81a3.84 3.84 0 0 1 2-3.84c1.34-.9 1.79-1.53 1.79-2.71a2.1 2.1 0 0 0-2.08-2.14h-.17a2.3 2.3 0 0 0-2.38 2.22v.17H5A4.71 4.71 0 0 1 9.51 1a5 5 0 0 1 .55 0zM8 17a1.89 1.89 0 0 1 1.77-2H10a1.87 1.87 0 0 1 2 1.73 1.22 1.22 0 0 1 0 .27 1.87 1.87 0 0 1-1.73 2 1.22 1.22 0 0 1-.27 0 1.88 1.88 0 0 1-2-1.75A1 1 0 0 1 8 17z"/>
-					</svg>
-				</span> 
-
-		<br /> Lets chat...</h3>
-			<a href="http://portwebsolutions.com.au/quote/index.html" class="centerButtonQuote">
-				<button mat-raised-button class="bigquote">Get A Quote</button>
-			</a>
-		</div>
-		<div class="bottomContact" [@contactBackgroundTrigger]=startBackground >
-			<ul class="portMac" itemscope itemtype="https://schema.org/LocalBusiness">
-				<li itemprop="areaServed">Port <br /> Macquarie</li>
-			</ul>
-			<ul class="listOfContacts">
-				<li [@changeDivSize]=currentState ><a href="https://goo.gl/maps/8rJbYFhPm7C2">Meet Up</a></li>
-				<li [@changeDivSize]=currentState>
-					<a href="tel:0452241945">Phone: 0452 241 945</a>
-				</li>
-				<li [@changeDivSize]=currentState>{{hiddenMail}}</li>
-			</ul>
-
-		</div>
-		
-		<div class="containerSVGContact" >
-
+<?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1201 1779" preserveAspectRatio="xMidYMid meet">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="2001.000000pt" height="1479.000000pt" viewBox="0 0 2001.000000 1479.000000"
+ preserveAspectRatio="xMidYMid meet">
 <defs>
+      <linearGradient id="Gradient1">
+        <stop class="stop1" offset="0%"/>
+        <stop class="stop2" offset="60%" stop-opacity=".5"/>
+        <stop class="stop3" offset="100%"/>
+      </linearGradient>
+      <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#3d749c"/>
+        <stop offset="30%" stop-color="black" stop-opacity="0"/>
+        <stop offset="100%" stop-color="blue"/>
+      </linearGradient>
+      <linearGradient id="Gradient3" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#3d749c"/>
+        <stop offset="30%" stop-color="black" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#274860"/>
+      </linearGradient>
 
+      <style type="text/css">
+      	<![CDATA[
+        #rect1, #rect2, #rect5, #rect6, #rect7, #rect8, #rect9, #rect10, #rect11   { fill: url(#Gradient1); }
+        .stop1 { stop-color: #274860; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: #0b0d0f; }
+      ]]>
+      	<![CDATA[
+        #rect3{ fill: url(#Gradient2); }
+        .stop1 { stop-color: #274860; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: #0b0d0f; }
+      ]]> 
+      	<![CDATA[
+        #rect4 { fill: url(#Gradient3); }
+        .stop1 { stop-color: #274860; }
+        .stop2 { stop-color: black; stop-opacity: 0; }
+        .stop3 { stop-color: #0b0d0f; }
+      ]]>  
+      </style>
   </defs>
-<g transform="translate(100.200000,1979.000000) scale(0.100000,-0.100000)"
-fill="#62b8f7">
+<g transform="translate(0.000000,1479.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
 <path d="M276 14769 c-30 -24 -34 -63 -10 -97 20 -28 83 -31 107 -4 37 41 5
 122 -47 122 -13 0 -35 -9 -50 -21z"/>
 <path d="M830 14442 c-19 -10 -43 -34 -52 -53 -51 -99 16 -203 132 -203 113 0
@@ -796,11 +802,3 @@ c29 -28 80 -63 113 -79 99 -45 131 -90 80 -110 -27 -10 -31 -26 -12 -51 36
 -36 36 -64 32 -24 -4 -40 0 -58 14 -29 23 -59 24 -80 4z"/>
 </g>
 </svg>
-
-		</div>
-
-</div>
-
-
-
- 

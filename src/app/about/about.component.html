@@ -1,39 +1,39 @@
-
-<div class="aboutContainer">
+<div class="metaaboutContainer" >
+	<div class="aboutContainer" itemscope parallax [config]="{initialValue: -250, ratio: .25}">
+		<br />
+		<br />
 	<h3>The Elevator Pitch</h3>
-	<article itemscope parallax [config]="{initialValue: -500, ratio: .3}">
+	<article>
 		<p class="elevatorPitch">
-			<strong itemprop="name">Port Web Solutions</strong> wants to build your business with cutting-edge online technology. Search results favour advanced websites. In {{ objDate | date:'yyyy' }}, leading websites need to feel similar to <strong [@changeDivSize]=currentState1>mobile apps</strong>. The more dynamic and user responsive the more customers will enjoy their interactions and search engines will rank it higher as a result. Newer technology means a more competitive website&mdash;it can have more controls for visitors and it displays content faster. Let's build a website that is molded to you and your customer's expectations.
+			<strong itemprop="name">Port Web Solutions</strong> wants to build your business with cutting-edge online technology. Search results favour advanced websites. In {{ objDate | date:'yyyy' }}, leading websites need to feel similar to <strong matTooltipPosition="above" matTooltipClass="goodWebsitesToolTips" matTooltip="Mobile is so Hansel right now." [@changeDivSize]=currentState1>mobile apps</strong>. The more dynamic and user responsive the more customers will enjoy their interactions and search engines will rank it higher as a result. Newer technology means a more competitive website&mdash;it can have more controls for visitors and it displays content faster. Let's build a website that is molded to you and your customer's expectations.
 		</p>
-		<h4>People expect web-content to be</h4>
+		<h4>Web-content should be</h4>
 		<ul class="listOfQualities">
-			<li>
-				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=currentState2a matTooltip="Changes respond quickly." aria-label="Google standards are for fast websites">
+			<li class="listPitch"> &#8902;
+				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" matTooltip="Changes respond quickly." [@changeDivSize]=listWebbies.currentState2a aria-label="Google standards are for fast websites">
 					Fast
 				</strong>
 			</li>
-			<li>
-				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=currentState2b matTooltip="Uses device capabilities." aria-label="Google standards are for integrated websites">
+			<li class="listPitch"> &#8902;
+				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=listWebbies.currentState2b matTooltip="Uses device capabilities." aria-label="Google standards are for integrated websites">
 					Integrated
 				</strong>
 			</li>			
-			<li>
-				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=currentState2c matTooltip="The content is malleable." aria-label="Google standards are for reactive websites">
+			<li class="listPitch"> &#8902;
+				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=listWebbies.currentState2c matTooltip="The content is malleable." aria-label="Google standards are for reactive websites">
 					Reactive
 				</strong>
 			</li>	
-			<li>
-				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=currentState2d matTooltip="A feeling is generated." aria-label="Google standards are for engagine websites">
+			<li class="listPitch"> &#8902;
+				<strong matTooltipPosition="right" matTooltipClass="goodWebsitesToolTips" [@changeDivSize]=listWebbies.currentState2d matTooltip="A feeling is generated." aria-label="Google standards are for engagine websites">
 					Engaging
 				</strong>
 			</li>	
 		</ul>
  
-		<p class="elevatorPitch"> Making websites using Google's <strong [@changeDivSize]=currentState3>mobile application</strong> driven technology: It's the bees-knees right now and it smashes competition. </p>
+
 	</article>
+	</div>
 </div>
 
-
-<div class="sideArrow" parallax [config]="{initialValue: -1300, ratio: .64}"></div>
-
-
+<div class="sideArrow" [hidden]='arrowHide' parallax [config]="{initialValue: -1300, ratio: .64}"></div>

@@ -27,9 +27,20 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
     state('antiThinking', style({
       transform: 'rotate(0deg)'
     })),
-    transition('proThinking=>antiThinking', animate('3000ms ease',)),
-    transition('antiThinking=>proThinking', animate('3000ms ease'))
+    transition('proThinking=>antiThinking', animate('5000ms ease',)),
+    transition('antiThinking=>proThinking', animate('5000ms ease'))
+    ]),
+  trigger('contactBackgroundTrigger', [
+    state('proBackgroundContact', style({
+          backgroundSize: "90%"
+    })),
+    state('antBackgroundContact', style({
+         backgroundSize: "140%"
+    })),
+    transition('proBackgroundContact=>antBackgroundContact', animate('35500ms',)),
+    transition('antBackgroundContact=>proBackgroundContact', animate('1500ms ease'))
     ]), 
+
   ]
 
 
@@ -39,17 +50,22 @@ export class ContactComponent implements OnInit {
   constructor(@Inject(WINDOW) private window: Window, public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
   currentState = 'initial';
   startThinking = "proThinking";
+  startBackground = "proBackgroundContact";
   hiddenMail = "";
 
   @HostListener('window:scroll', ['$event'])
 		changeState() {
 			const componentPosition = this.el.nativeElement.offsetTop;
 			const scrollPosition3 = this.window.pageYOffset + 100;
-		  if (scrollPosition3 >= componentPosition) { this.currentState  = 'final'; this.hiddenMail = "admin@portwebsolutions.com.au";} else { this.currentState  = 'initial'; this.hiddenMail = "admin@portwebsolotions.com.au";}
+		  if (scrollPosition3 >= componentPosition) { this.currentState  = 'final'; this.hiddenMail = "admin@portwebsolutions.com.au";} else { this.hiddenMail = "admin@portwebsolotions.com.au";}
       
       const thinkingPosition = this.el.nativeElement.offsetTop;
       const scrollPositionText = this.window.pageYOffset + 400;
-      if (scrollPositionText >= thinkingPosition) { this.startThinking  = 'antiThinking'}
+      if (scrollPositionText >= thinkingPosition) { this.startThinking  = 'antiThinking'} 
+
+      const backgroundPosition = this.el.nativeElement.offsetTop;
+      const scrollPositionBackground = this.window.pageYOffset;      
+      if (scrollPositionBackground >= backgroundPosition) { this.startBackground  = 'antBackgroundContact'} else { this.startBackground  = 'proBackgroundContact'}
      }
  
   ngOnInit() {}

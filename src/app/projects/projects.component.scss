@@ -1,3 +1,7 @@
+.threePreviousWorkMobile{
+    display: none;
+}
+
  h3{
     display: block;
     font-size: 1.17em;
@@ -26,7 +30,7 @@ ul.projectSkills li{
   animation-duration: 2s;
 }
 .projectsContainer{
-    padding: 10vh 6vw;
+    padding: 8vh 6vw 15vh 6vw;
     font-size: 1.4em;
     height: 140vh;
 }

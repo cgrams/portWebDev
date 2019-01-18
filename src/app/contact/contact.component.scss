@@ -1,7 +1,4 @@
-aside.blurb {
-    color: white;
-    text-align: center;
-}
+
 h3.contactTtitle {
   text-align: center;
   font-size: 3em;
@@ -10,14 +7,17 @@ ul.portMac {
     font-size: 3em;
     color: white;
     list-style: none;
+    margin: 0;
+    padding: 5% 1em;
 }
 ul.listOfContacts {
   color: #43b7ff;
   list-style: none;
   font-size: 1.5em;
+  line-height: 50px;
 }
 .thinkingSection{
-  height: 80vh;  
+  height: 110vh;  
   background: white;
   display: flex;
   justify-content: center;
@@ -27,7 +27,8 @@ ul.listOfContacts {
   font-family: 'Alex Brush', cursive;
   font-size: 8em;
   width: 800px;
-  padding: .8em;
+  padding: .7em;
+
 }
 .questionMark{
   position: relative;
@@ -35,4 +36,30 @@ ul.listOfContacts {
 }
 .centerButtonQuote{
   margin: 0 auto;
+}
+.bottomContact{
+    background: url('../../assets/splatter4.svg');
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8; 
+    grid-row-end: 13;
+}
+.containerSVGContact {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 13;
+}
+
+.metaContactContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 100px);
+}
+.thinkingSection {
+    grid-column-start: 1;
+    grid-column-end: 5;
 }

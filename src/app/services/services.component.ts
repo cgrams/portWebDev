@@ -3,7 +3,7 @@ import { Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  styleUrls: ['./services.component.scss', './servicesMobile.scss']
 })
 export class ServicesComponent implements OnInit {
 
@@ -14,20 +14,22 @@ export class ServicesComponent implements OnInit {
 	constructor() { }
 		
 
-
-
 move: any[] = [
     {
-      "name": 'Total Makeover: Rebuild website in latest technology '
+      "name": 'Total Makeover:',
+      "serviceExplaination": ' Rebuild website in latest technology '
     },
     {
-      "name": 'Partial Makeover: Build new landing page and keep old website framework'
+      "name": 'Partial Makeover: ',
+      "serviceExplaination": ' New landing page with old website framework'
     },
     {
-      "name": 'Small Changes: Make minor adjustments for your old website'
+      "name": 'Small Changes:',
+      "serviceExplaination": ' Make minor adjustments for your old website'
     },
     {
-      "name": 'Search Engine Optimisation'
+      "name": 'Search Engine Optimisation',
+      "serviceExplaination:": ' Push you website higher on Google'
     }
   ];
 

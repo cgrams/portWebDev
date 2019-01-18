@@ -7,7 +7,7 @@ import * as lozad from 'lozad';
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss', './app.mobile.scss'],
+	styleUrls: ['./cssTopLevel/top.component.scss', './cssTopLevel/top.phone.scss', './cssTopLevel/top.tablet.scss'],
 	animations: [
 	  trigger('changeMobileQuote', [
 	    state('proMobileQuoteSate', style({
@@ -24,19 +24,19 @@ import * as lozad from 'lozad';
 })
 export class AppComponent implements OnInit  {
 	reason = '';
+	quoteState = 'proQuote';
 
-currentState = 'initial';
-changeState() {
-  this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
-}
+	currentState = 'initial';
+	changeState() {
+	  this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+	}
 	topHandStateVariable = 'proHandstate';
 	moveHand(state: any) { this.topHandStateVariable = state; }
 
 	topQuoteStateVariable = 'proQuotestate';
 	moveQuote(state: any) { this.topQuoteStateVariable = state; }
 
-
-quoteMobileState = 'proMobileQuoteSate'
+	quoteMobileState = 'proMobileQuoteSate'
 
 	constructor(public el: ElementRef){}
 	@HostListener('window:scroll', ['$event'])
@@ -46,11 +46,8 @@ quoteMobileState = 'proMobileQuoteSate'
 		if (scrollPositionMobileQuote >= componentPosition) { this.quoteMobileState = 'anitMobileQuoteSate';} else { this.quoteMobileState = 'proMobileQuoteSate';}
 	}
 
-
-	quoteState = 'proQuote';
-	
 	ngOnInit(){
-		console.info('%c If you\'re reading this than I\'d love to work with you.', 'font-family:  arial; background: #43b7ff; color: black; font-size: 22pt');
+		console.info('%c If you\'re reading this then I\'d love to work with you.', 'font-family:  arial; background: #43b7ff; color: black; font-size: 22pt');
 		console.info('%c Send me a text at 0452 241 945', 'font-family: arial; background: #43b7ff; color: black; font-size: 20pt');
 		lozad('.lozad', {
 	    	load: function(el) {

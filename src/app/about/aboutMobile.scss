@@ -1,12 +1,41 @@
-@media screen and (max-width: 992px) {
+@media only screen and (min-device-width : 950px) and (max-device-width : 1024px){
     .sideArrow{
+        display: none;
+        } 
+
+     div.metaaboutContainer{
+        height: 150vh;
+    }              
+}
+
+@media screen and (max-width: 949px) {
+    .sideArrow{
+        display: none;
         width: 100%;
         height: 130vh;
         -webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
         }
 
-    h3{ font-size: 2em; }
+    h3{
+        font-size: 1.0em;
+        margin: 10px;
+    }
 
-    .aboutContainer  article { padding-bottom: 15vh; }
+    .aboutContainer  article { 
+        padding-bottom: 15vh;
+        font-size: 20px;
+         }
+
+    div.metaaboutContainer{
+        height: 170vh;
+        position: relative;
+        z-index: 999;
+        background: white;
+    }
+
+    .aboutContainer{
+    padding: 0 7%;
+    height: 170vh;
+    }    
 }

@@ -1,23 +1,40 @@
-@media screen and (max-width: 992px) {
+@media only screen and (min-device-width : 950px) and (max-device-width : 1024px){
+    .sideArrow{
+        display: none;
+        } 
+
+     div.metaaboutContainer{
+        height: 150vh;
+    } 
+
+    .projectsContainer {
+        padding: 15vh 6vw;
+        font-size: 1.4em;
+        height: 1000px;
+    }
+}
+
+
+@media screen and (max-width: 949px) {
     h3{
         margin-bottom: 20px;
         font-size: 2em;
     }
 
-	.picsContainerProjects{
+
+
+    .projectsContainer{
+    padding: 1px 6vw;
+    font-size: 1em;
+    }
+    
+    .threePreviousWork{
+        display: none;
+    }
+
+    .threePreviousWorkMobile{
         display: flex;
-	    flex-direction: column;
-	}
-
-.projectsContainer{
-    padding: 10vh 6vw;
-    font-size: 1.4em;
-    height: 130vh;
-}
-
-.threePreviousWork {
-    display: flex;
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
 
 }

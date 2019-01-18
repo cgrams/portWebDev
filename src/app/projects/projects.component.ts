@@ -56,34 +56,33 @@ export class ProjectsComponent implements OnInit {
 		    	if (scrollPosition3 >= componentPosition) { this.picState  = 'final'; } else { this.picState  = 'initial';}
 			}
 
-projectSkillsList: any[] = [
-    {
-      "ability": "UI/UX,"
-    },
-    {
-      "ability": "Web Design,"
-    },
-    {
-      "ability": "Mobile Design,"
-    },
-    {
-      "ability": "Web Development,"
-    },
-    {
-      "ability": "Mobile App,"
-    },
-    {
-      "ability": "eCommerce,"
-    },
-    {
-      "ability": "Digital Marketing,"
-    },
-    {
-      "ability": "Startups."
-    }
-  ];
+	projectSkillsList: any[] = [
+	    {
+	      "ability": "UI/UX,"
+	    },
+	    {
+	      "ability": "Web Design,"
+	    },
+	    {
+	      "ability": "Mobile Design,"
+	    },
+	    {
+	      "ability": "Web Development,"
+	    },
+	    {
+	      "ability": "Mobile App,"
+	    },
+	    {
+	      "ability": "eCommerce,"
+	    },
+	    {
+	      "ability": "Digital Marketing,"
+	    },
+	    {
+	      "ability": "Startups."
+	    }
+	  ];
  
-
 
   ngOnInit() {
 	lozad('.lozad', {
