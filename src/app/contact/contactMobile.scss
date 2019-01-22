@@ -7,6 +7,10 @@
 	    background: black;
 	}
 
+	div.metaContactContainer{
+	    grid-template-rows: repeat(11,100px);
+	}
+
 }
 
 @media screen and (max-width: 625px) {

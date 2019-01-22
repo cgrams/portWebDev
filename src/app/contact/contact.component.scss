@@ -1,4 +1,15 @@
 
+a:visited {
+    color: #0528d0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a{
+    transition: all 0.3s ease;
+}
+a:hover{
+  color: #43b7ff;
+}
 h3.contactTtitle {
   text-align: center;
   font-size: 3em;
@@ -28,7 +39,11 @@ ul.listOfContacts {
   font-size: 8em;
   width: 800px;
   padding: .7em;
+  transition: all 0.3s ease;
+}
 
+.bigquote:hover{
+  background: #f6fbff;
 }
 .questionMark{
   position: relative;
@@ -46,6 +61,7 @@ ul.listOfContacts {
     grid-column-end: 5;
     grid-row-start: 8; 
     grid-row-end: 13;
+    font-style: normal;
 }
 .containerSVGContact {
     grid-column-start: 2;
