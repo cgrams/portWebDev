@@ -6,10 +6,18 @@
 	.bottomContact{
 	    background: black;
 	}
-
+h3.contactTtitle{
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+    z-index: 99;
+}
 	div.metaContactContainer{
 	    grid-template-rows: repeat(11,100px);
 	}
+span.questionMark svg {
+    height: 30px;
+}
 
 }
 
