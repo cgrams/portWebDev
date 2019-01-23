@@ -19,10 +19,10 @@
 	    position: fixed;
 	}
 	ul.navButtonHolderMobile {
-    list-style: none;
-    padding: 0 25%;
-    line-height: 7;
-}
+	    list-style: none;
+	    padding: 0 25%;
+	    line-height: 7;
+	}
 	.hamburgerBar{
 	    width: 30px;
 	    height: 3px;
@@ -32,9 +32,9 @@
 	    right: 0px;
 	}
 	.hamburgerController {
-    position: relative;
-    left: 17%;
-}
+    	position: relative;
+    	left: 17%;
+	}
 	 .mobileTableCallToAction{
 	 	width: 100%;
 	 }
@@ -42,17 +42,18 @@
     	width: 50%;
 	}
 	.mobilePhone {
-    background: white;
-    padding: 2px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
+	    background: white;
+	    padding: 2px;
+	    display: flex;
+	    align-items: center;
+	    align-content: center;
+	    justify-content: center;
+	}
 	.mobileQuote a:visited {
   		color: #62b8f7;
 	}
 }
+
 @media screen and (min-width: 993px) {
 	.quoteContainer{ display: block; }
 	.mobileQuote{ display: none;}
