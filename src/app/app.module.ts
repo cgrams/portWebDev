@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
+
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -47,10 +48,10 @@ import { environment } from '../environments/environment';
   ],
   imports:[
  CommonModule,
-  NgtUniversalModule,
- BrowserModule.withServerTransition({appId: 'my-app'}),
- TransferHttpCacheModule,
-HttpClientModule,
+    NgtUniversalModule,
+    BrowserModule.withServerTransition({appId: 'my-app'}),
+    TransferHttpCacheModule,
+    HttpClientModule,
  
     
     BrowserAnimationsModule,

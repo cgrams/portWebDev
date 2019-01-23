@@ -1,19 +1,54 @@
 @media screen and (max-width: 992px) {
 	.quoteContainer{ display: none; }
 	.mobileQuote{
-		display: block;
+		display: flex;
+		text-align: center;
+    	justify-content: space-evenly;
   		position: -webkit-sticky;
-  		position: sticky;
+  		position: fixed;
 		top:0;
 		z-index: 999999;
 		width: 100%;
     	background: #0b0c0c;
     	color: #62b8f7;
 		text-decoration: none;
-		padding: 7px;
     	text-align: center;
 	}
- 
+	mat-sidenav{
+	    max-height: 100vh;
+	    position: fixed;
+	}
+	ul.navButtonHolderMobile {
+    list-style: none;
+    padding: 0 25%;
+    line-height: 7;
+}
+	.hamburgerBar{
+	    width: 30px;
+	    height: 3px;
+	    background-color: black;
+	    margin: 5px 0;
+	    position: relative;
+	    right: 0px;
+	}
+	.hamburgerController {
+    position: relative;
+    left: 17%;
+}
+	 .mobileTableCallToAction{
+	 	width: 100%;
+	 }
+	 td.firstMobileCellAction {
+    	width: 50%;
+	}
+	.mobilePhone {
+    background: white;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
 	.mobileQuote a:visited {
   		color: #62b8f7;
 	}

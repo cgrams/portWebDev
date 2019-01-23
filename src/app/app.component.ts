@@ -3,6 +3,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 import * as lozad from 'lozad';
 
+import { NgAnimateScrollService } from 'ng-animate-scroll';
 
 @Component({
 	selector: 'app-root',
@@ -38,7 +39,15 @@ export class AppComponent implements OnInit  {
 
 	quoteMobileState = 'proMobileQuoteSate'
 
-	constructor(public el: ElementRef){}
+	constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService){}
+	    
+	navigateToAboutMobile(duration?:number) { this.animateScrollService.scrollToElement('about', duration) };
+	navigateToWorkMobile(duration?:number) { this.animateScrollService.scrollToElement('work', duration) };
+	navigateToServicesMobile(duration?:number) { this.animateScrollService.scrollToElement('services', duration) };
+	navigateToContactMobile(duration?:number) { this.animateScrollService.scrollToElement('contact', duration) };
+
+
+
 	@HostListener('window:scroll', ['$event'])
 	changeQuoteCSS(){
 		const componentPosition = this.el.nativeElement.offsetTop;

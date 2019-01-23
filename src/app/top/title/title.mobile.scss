@@ -5,11 +5,16 @@
 
 @media screen and (max-width: 992px) {
 	.titleWrapper{ display: none; }
+div.subContainerTitle svg{
+    display: none;
+}
 
 	div.titleWrapperMobile{
 	    display: grid;
     	width: 100%;
-    	grid-template-columns: 50% 50% ;
+    	grid-template-columns: 100%;
+    	top: 75px;
+    	position: relative;
 	}
 	.textUp {
     font-size: 12vw;

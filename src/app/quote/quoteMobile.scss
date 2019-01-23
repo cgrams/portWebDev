@@ -2,12 +2,6 @@
 	.quoteContainer{
 		display: none;
 	}
-
-	.mobileQuote{
-		display: block;
-  		position: -webkit-sticky;
-  		position: sticky;		
-	}
 }
 @media screen and (min-width: 993px) {
 	.quoteContainer{
