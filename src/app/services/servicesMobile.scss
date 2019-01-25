@@ -1,6 +1,6 @@
 @media screen and (max-width: 992px) {
   .servicesContainer{
-      padding: 20vh 0vw;
+      padding: 0vh 0vw;
   }
   span.serviceExplaination {
       display: block;
@@ -10,4 +10,10 @@
     line-height: 1.7em;
     padding: 5% 0;
   }
+
+  h3{
+    font-size: 2em;
+    margin: 5%;
+  }
+
 }

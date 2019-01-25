@@ -17,20 +17,21 @@
 
 @media screen and (max-width: 949px) {
     h3{
-        margin-bottom: 20px;
-        font-size: 2em;
+        margin: 5% 0;
+        font-size: 1.77em;
     }
-
-
+    .picsContainerProjects{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 100%;
+    }
 
     .projectsContainer{
-    padding: 1px 6vw;
-    font-size: 1em;
+        padding: 1px 6vw;
+        font-size: 1em;
     }
     
-    .threePreviousWork{
-        display: none;
-    }
+    .threePreviousWork{ display: none; }
 
     .threePreviousWorkMobile{
         display: flex;
