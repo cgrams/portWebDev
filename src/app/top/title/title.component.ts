@@ -59,6 +59,12 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 export class TitleComponent implements OnInit {
   stateHand = 'proHand'
   constructor(@Inject(WINDOW) private window: Window, private animateScrollService: NgAnimateScrollService, public el: ElementRef) { }
+  
+  handStyles: any = {
+    top: 'handTop handSize bounceIn animated slower',
+    middle: 'handMiddle handSize bounceIn animated slower',
+    bottom: 'handBottom handSize bounceIn animated slower',
+  };
 
 @HostListener('window:scroll', ['$event'])
     checkScroll() {
@@ -67,8 +73,14 @@ export class TitleComponent implements OnInit {
 
       if (scrollPosition >= componentPosition) {
         this.stateHand = 'antiHand';
+        this.handStyles.top ='handTop handSize';
+        this.handStyles.middle ='handMiddle handSize';
+        this.handStyles.bottom ='handBottom handSize ';
       } else {
         this.stateHand = 'proHand';
+        this.handStyles.top ='handTop handSize bounceIn animated slower';
+        this.handStyles.middle = 'handMiddle handSize bounceIn animated slower';
+        this.handStyles.bottom = 'handBottom handSize bounceIn animated slower';        
       }
 
     }

@@ -52,12 +52,12 @@ export class ContactComponent implements OnInit {
   startThinking = "proThinking";
   startBackground = "proBackgroundContact";
   hiddenMail = "";
-
+  phoneString = "";
   @HostListener('window:scroll', ['$event'])
 		changeState() {
 			const componentPosition = this.el.nativeElement.offsetTop;
 			const scrollPosition3 = this.window.pageYOffset + 100;
-		  if (scrollPosition3 >= componentPosition) { this.currentState  = 'final'; this.hiddenMail = "admin@portwebsolutions.com.au";} else { this.hiddenMail = "admin@portwebsolotions.com.au";}
+		  if (scrollPosition3 >= componentPosition) {this.currentState  = 'final'; this.hiddenMail = "admin@portwebsolutions.com.au";} else { this.hiddenMail = "admin@portwebsolotions.com.au";}
       
       const thinkingPosition = this.el.nativeElement.offsetTop;
       const scrollPositionText = this.window.pageYOffset + 400;
@@ -65,7 +65,7 @@ export class ContactComponent implements OnInit {
 
       const backgroundPosition = this.el.nativeElement.offsetTop;
       const scrollPositionBackground = this.window.pageYOffset;      
-      if (scrollPositionBackground >= backgroundPosition) { this.startBackground  = 'antBackgroundContact'} else { this.startBackground  = 'proBackgroundContact'}
+      if (scrollPositionBackground >= backgroundPosition) { this.startBackground  = 'antBackgroundContact', this.phoneString = "animated shake"; } else { this.startBackground  = 'proBackgroundContact';  this.phoneString = "";}
      }
  
   ngOnInit() {}

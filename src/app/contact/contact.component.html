@@ -3,7 +3,7 @@
 		<div class="thinkingSection">
 			<h3 class="contactTtitle" >
 				Thinking of a Project or Partnership
-				<span class="questionMark" >
+				<span  class="questionMark" >
 					<svg [@changeThinkingColors]=startThinking xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
 					  <path d="M10.06 1C13 1 15 2.89 15 5.53a4.59 4.59 0 0 1-2.29 4.08c-1.42.92-1.82 1.53-1.82 2.71V13H8.38v-.81a3.84 3.84 0 0 1 2-3.84c1.34-.9 1.79-1.53 1.79-2.71a2.1 2.1 0 0 0-2.08-2.14h-.17a2.3 2.3 0 0 0-2.38 2.22v.17H5A4.71 4.71 0 0 1 9.51 1a5 5 0 0 1 .55 0zM8 17a1.89 1.89 0 0 1 1.77-2H10a1.87 1.87 0 0 1 2 1.73 1.22 1.22 0 0 1 0 .27 1.87 1.87 0 0 1-1.73 2 1.22 1.22 0 0 1-.27 0 1.88 1.88 0 0 1-2-1.75A1 1 0 0 1 8 17z"/>
 					</svg>
@@ -11,7 +11,7 @@
 			<br /> Lets chat...
 			</h3>
 			<a href="https://portwebsolutions.com.au/form/index.html" class="centerButtonQuote">
-				<button mat-raised-button class="bigquote">Get A Quote</button>
+				<button mat-raised-button class="bigquote" >Get A Quote</button>
 			</a>
 		</div>
 		
@@ -20,28 +20,28 @@
 				<li itemprop="areaServed">Port <br /> Macquarie</li>
 			</ul>
 			<ul class="listOfContacts">
-				<li [@changeDivSize]=currentState ><a href="https://goo.gl/maps/8rJbYFhPm7C2">Meet Up</a></li>
+				<li [@changeDivSize]=currentState ><a href="https://goo.gl/maps/8rJbYFhPm7C2"> Meet Up</a></li>
 				<li [@changeDivSize]=currentState>
-					<a href="tel:0452241945" itemprop="telephone">Phone: 0452 241 945</a>
+					<a href="tel:0452241945" class="phoneGroup" itemprop="telephone"><div [class]="phoneString" id="phoneAppear"> &#9742; 	&nbsp;</div> <div>Phone: 0452 241 945</div></a>
 				</li>
-				<li [@changeDivSize]=currentState>{{hiddenMail}}</li>
+				<li  [@changeDivSize]=currentState>{{hiddenMail}}</li>
 			</ul>
 		</address>
 		
-		<div class="containerSVGContact" >
+		<div class="containerSVGContact"  >
 			<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
 			 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 			<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1201 1779" preserveAspectRatio="xMidYMid meet">
 			<defs>
-			<clipPath id="myClip">
-			<ellipse rx="50" ry="75" cx="50" cy="150" transform="rotate(-30)"/>
-			<polygon points="350,25  379,141 469, 141 397,195 423,281 350,230 277,281 303,195 231,141 321,141" />
-
-			      <circle cx="350" cy="168" r="80"/>
-			    </clipPath>
-			  </defs>
+				<linearGradient id="GradientBottom" x1="0" x2="0" y1="0" y2="1">
+			    	<stop offset="10%" stop-color="#54b4eb" stop-opacity="1"/>
+			    	<stop offset="20%" stop-color="#2FA4E7" stop-opacity="1"/>
+			     	<stop offset="40%" stop-color="#2eacf4" stop-opacity="1"/>
+			     	<stop offset="90%" stop-color="#44b9fc" stop-opacity="1"/>        
+			    </linearGradient>
+			</defs>
 			<g transform="translate(100.200000,1979.000000) scale(0.100000,-0.100000)"
-			fill="#62b8f7">
+			fill="url(#GradientBottom)">
 			<path d="M276 14769 c-30 -24 -34 -63 -10 -97 20 -28 83 -31 107 -4 37 41 5
 			122 -47 122 -13 0 -35 -9 -50 -21z"/>
 			<path d="M830 14442 c-19 -10 -43 -34 -52 -53 -51 -99 16 -203 132 -203 113 0

@@ -54,14 +54,13 @@ ul.listOfContacts {
   margin: 0 auto;
 }
 ul.portMac{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+95&1+36,0.23+94 */
-background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 36%, rgba(0,0,0,0.23) 94%, rgba(0,0,0,0.23) 95%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 36%,rgba(0,0,0,0.23) 94%,rgba(0,0,0,0.23) 95%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 36%,rgba(0,0,0,0.23) 94%,rgba(0,0,0,0.23) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3b000000',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 36%, rgba(0,0,0,0.23) 94%, rgba(0,0,0,0.00) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 36%,rgba(0,0,0,0.23) 94%,rgba(0,0,0,0.00) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 36%,rgba(0,0,0,0.23) 94%,rgba(0,0,0,0.00) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3b000000',GradientType=0 ); /* IE6-9 */
 }
 .bottomContact{
-    background: url('../../assets/splatter4.svg');
+    background: url('../../assets/splatter4.1.svg');
     background-size: cover;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -87,3 +86,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     grid-column-start: 1;
     grid-column-end: 5;
 }
+
+
+#phoneAppear{
+
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-delay: 5s;
+}
+
+a.phoneGroup {
+    display: flex;
+    flex-direction: row;
+} 
