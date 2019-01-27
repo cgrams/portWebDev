@@ -5,11 +5,11 @@ a:visited {
     transition: all 0.3s ease;
 }
 a{
-  color: #2d51fd;
+  color: #43b7ff;
     transition: all 0.3s ease;
 }
 a:hover{
-  color: #43b7ff;
+  color: #2d51fd;
 }
 h3.contactTtitle {
   text-align: center;
@@ -24,7 +24,6 @@ ul.portMac {
 }
 ul.listOfContacts {
   color: #43b7ff;
-  list-style: none;
   font-size: 1.5em;
   line-height: 50px;
 }
@@ -113,14 +112,14 @@ ul.portMac{
   50%,
   70%,
   90% {
-    transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate3d(10px, 0, 0);
+    transform: translate3d(5px, 0, 0);
   }
 }
 
@@ -129,8 +128,39 @@ ul.portMac{
   animation-duration: 1s;
   animation-delay: 5s;
 }
+ @keyframes shake2 {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+.shake2 {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-delay: 9s;
+}
 a.phoneGroup {
     display: flex;
     flex-direction: row;
+    color: #43b7ff;
 } 
+
+a.phoneGroup:hover{
+  color: #2d51fd;
+}
