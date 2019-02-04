@@ -4,16 +4,19 @@
   }
   span.serviceExplaination {
       display: block;
+          text-align: left;
   }
   li.itemSolution{
-    font-size: 1.4em;
-    line-height: 1.7em;
-    padding: 5% 0;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding: 3% 0;
   }
 
   h3{
     font-size: 2em;
     margin: 5%;
   }
-
+  .solutionsList {
+    padding: 10px;
+  }
 }
