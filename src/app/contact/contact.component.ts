@@ -53,7 +53,6 @@ export class ContactComponent implements OnInit {
   startBackground = "proBackgroundContact";
   hiddenMail = "";
   phoneString = "";
-  phoneString2 = "";
   emStyled = "&#x1D544;";
   @HostListener('window:scroll', ['$event'])
 		changeState() {
@@ -67,7 +66,7 @@ export class ContactComponent implements OnInit {
 
       const backgroundPosition = this.el.nativeElement.offsetTop;
       const scrollPositionBackground = this.window.pageYOffset;      
-      if (scrollPositionBackground >= backgroundPosition) { this.startBackground  = 'antBackgroundContact', this.phoneString = "animated shake"; this.phoneString2 = "animated shake2"; } else { this.startBackground  = 'proBackgroundContact'; this.phoneString2 = ""; this.phoneString = "";}
+      if (scrollPositionBackground >= backgroundPosition) { this.startBackground  = 'antBackgroundContact', this.phoneString = "animated shake"; } else { this.startBackground  = 'proBackgroundContact';  this.phoneString = "";}
      }
  
   ngOnInit() {}

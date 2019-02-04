@@ -47,8 +47,8 @@ body {
 }
 
 .content {
-
-font-family: 'Lato',sans-serif;  
+  font-family: 'Lato',sans-serif;
+  font-display: fallback;
   text-align: center;  background-color: #2d55aa;
   text-align: center;
   min-height: 75vh;

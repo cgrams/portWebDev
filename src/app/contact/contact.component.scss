@@ -36,6 +36,7 @@ ul.listOfContacts {
 }
 .bigquote{
   font-family: 'Alex Brush', cursive;
+  font-display: fallback;
   font-size: 8em;
   width: 800px;
   padding: .7em;
@@ -128,33 +129,7 @@ ul.portMac{
   animation-duration: 1s;
   animation-delay: 5s;
 }
- @keyframes shake2 {
-  from,
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate3d(5px, 0, 0);
-  }
-}
-
-.shake2 {
-  animation-name: shake;
-  animation-duration: 1s;
-  animation-delay: 9s;
-}
+ 
 a.phoneGroup {
     display: flex;
     flex-direction: row;

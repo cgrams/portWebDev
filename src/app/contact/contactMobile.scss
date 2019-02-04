@@ -24,6 +24,7 @@ span.questionMark svg {
 @media screen and (max-width: 625px) {
   .bigquote{
     font-family: 'Alex Brush', cursive;
+      font-display: fallback;
     font-size: 3em;
   }
   ul.listOfContacts{
