@@ -79,37 +79,4 @@ article.thumb.middlePic {
 .border-button {
   border: solid 10px #43b7ff;
   margin: 0.1em;
-  transition: -webkit-clip-path 0.3s linear;
-  transition: clip-path 0.3s linear;
-  transition: clip-path 0.3s linear, -webkit-clip-path 0.3s linear;
-  -webkit-clip-path: polygon(
-    calc(0% + 5px) 
-    calc(0% + 5px), 
-
-    calc(100% - 5px) 
-    calc(0% + 5px), 
-
-    calc(100% - 5px) 
-    calc(100% - 5px), 
-
-    calc(0% + 5px) 
-    calc(100% - 5px)
-    );
-          clip-path: polygon(
-    calc(0% + 5px) 
-    calc(0% + 5px), 
-
-    calc(100% - 5px) 
-    calc(0% + 5px), 
-
-    calc(100% - 5px) 
-    calc(100% - 5px), 
-
-    calc(0% + 5px) 
-    calc(100% - 5px)
-    );
-}
-.border-button:hover {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
