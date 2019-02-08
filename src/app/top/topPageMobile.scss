@@ -1,13 +1,13 @@
 @media only screen and (min-device-width : 950px) and (max-device-width : 1024px){
 		.topWrapper{
-	    height: 50vh;
+	    height: 700px;
 	}
 }
 
 @media only screen and (max-width: 950px) {
 	.topWrapper{
 	    padding: 0 6% 0 6%;
-	    height: 90vh;
+	    height: 700px;
 	}
 	ul.navButtonHolder {
     display: none;
@@ -29,7 +29,7 @@
 @media only screen and (max-width: 750px) {
 	section.topWrapper{
 	    padding: 0 6% 0 6%;
-	    height: 75vh;
+	    height: 600px;
 	}
 
 }

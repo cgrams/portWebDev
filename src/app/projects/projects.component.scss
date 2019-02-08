@@ -22,9 +22,7 @@ ul.projectSkills{
 h4{
     font-weight: bold;
 }
-ul.projectSkills li{
-    display: inline;
-}
+
 .fade {
   animation-name: fade;
   animation-duration: 2s;
@@ -57,11 +55,11 @@ img:hover {
     padding: 1%;    
 }
 .picsContainerProjects article {
-    margin: 10%;
+    margin: 10% 0;
 }
 .picsContainerProjects {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 25% 75%;
 }
 .threePreviousWork {
     display: flex;

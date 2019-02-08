@@ -33,9 +33,11 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
   trigger('contactBackgroundTrigger', [
     state('proBackgroundContact', style({
           backgroundSize: "90%",
+          backgroundPosition: 'bottom right'
     })),
     state('antBackgroundContact', style({
-         backgroundSize: "140%"
+         backgroundSize: "180%",
+         backgroundPosition: 'bottom left'
     })),
     transition('proBackgroundContact=>antBackgroundContact', animate('35500ms',)),
     transition('antBackgroundContact=>proBackgroundContact', animate('1500ms ease'))
