@@ -17,7 +17,9 @@
 				<tbody>
 					<tr>
 						<td class="firstMobileCellAction">
-							<div class="mobleQuoteForm"><a href="https://portwebsolutions.com.au/form/index.html">GET QUOTE</a></div>
+							<div class="mobleQuoteForm">
+								<a href="https://portwebsolutions.com.au/form/index.html">GET QUOTE</a>
+							</div>
 						</td>
 						<td class="secondMobileCellAction">
 							<div class="mobilePhone">
@@ -36,7 +38,7 @@
 								c-0.177-0.074-0.374-0.075-0.561-0.113C6.752-0.807,2.384,2.886,1.938,8.445z"/>
 						</g>
 						</svg>
-						CALL
+						<span class="calltextMobile">CALL</span>
 					</a> 
 					<div class="hamburgerController" (click)="sidenav.toggle()">
 						<div class="hamburgerBar"></div>
@@ -57,7 +59,7 @@
 				    <app-top [topLevelHandController]="topHandStateVariable"></app-top>
 				</header>
 				
-				<section id="about">
+				<section>
 					<app-about></app-about>
 				</section>
 
@@ -65,10 +67,10 @@
 					<app-projects></app-projects>		
 				</section>
 
-				<section id="services">
+				<section>
 					<app-services></app-services>
 				</section>
-				<section id="contact" class="matBackground">
+				<section class="matBackground">
 					<app-contact></app-contact>
 					<footer>
 						<app-footer></app-footer>

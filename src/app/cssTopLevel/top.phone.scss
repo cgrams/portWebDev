@@ -2,7 +2,13 @@
 .mobleQuoteForm {
 text-align: center;
 }
-
+ul.navButtonHolderMobile li a {
+    color: black;
+}
+.calltextMobile{
+	color:#62b8f8;
+	padding-left: 3px;
+}
 	.quoteContainer{ display: none; }
 	.mobileQuote{
 		display: flex;
@@ -14,7 +20,7 @@ text-align: center;
 		z-index: 999999;
 		width: 100%;
     	background: #0b0c0c;
-    	color: #62b8f7;
+    	color: #ffffff;
 		text-decoration: none;
     	text-align: center;
 	}
@@ -54,7 +60,7 @@ text-align: center;
 	    justify-content: center;
 	}
 	.mobileQuote a:visited {
-  		color: #62b8f7;
+  		color: white;
 	}
 	section#work{
 		height: 1352px;

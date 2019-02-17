@@ -11,15 +11,13 @@ import { MatButtonModule } from '@angular/material/button';
   animations: [
   	trigger('changeQuoteState', [
   		state('proQuotestate',
-
-        style({ marginTop: '10vh'})
-
+        style({top: '60px'})
       ),
-  		state('antiQuotestate', style({
-  			marginTop: '3vh' 
-    		})),
-    		transition('* => antiQuotestate', animate('1000ms 300ms')),
-    		transition('* => proQuotestate', animate('1000ms 300ms')),  		 		
+  		state('antiQuotestate', 
+        style({ top: '30px'})
+        ),
+    		transition('* => antiQuotestate', animate('500ms 300ms')),
+    		transition('* => proQuotestate', animate('500ms 300ms')),  		 		
     		])
   ]
 })

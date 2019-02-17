@@ -28,12 +28,14 @@
          }
 
     div.metaaboutContainer{
-        height: 975px;
+        height: 1010px;
         position: relative;
         z-index: 999;
         background: white;
     }
-
+ul.listOfQualities{
+    padding: 0;
+}
     .aboutContainer{
     padding: 0 7%;
     height: 170vh;

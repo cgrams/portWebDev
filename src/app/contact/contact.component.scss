@@ -85,6 +85,7 @@ ul.portMac{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12, 100px);
+        background: black;
 }
 .thinkingSection {
     grid-column-start: 1;
