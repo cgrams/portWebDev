@@ -87,7 +87,7 @@ export class TitleComponent implements OnInit {
 
   ngOnInit() {}
 
-  navigateToAboutArrow(duration?:number) { this.animateScrollService.scrollToElement('aboutScrollTo', duration) };
+  navigateToAboutArrow(duration?:number) { this.animateScrollService.scrollToElement('about', duration) };
 
 	@Input() topLevelTextController;
   @Input() topLevelHandController;

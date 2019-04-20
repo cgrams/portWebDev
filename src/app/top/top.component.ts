@@ -13,7 +13,7 @@ export class TopComponent implements OnInit {
 
 	constructor(@Inject(WINDOW) private window: Window, public el: ElementRef, private animateScrollService: NgAnimateScrollService) { }
 
-	navigateToWork(duration?:number) { this.animateScrollService.scrollToElement('work', duration) };
+	navigateToWork(duration?:number) { this.animateScrollService.scrollToElement('workScroll', duration) };
 	navigateToServices(duration?:number){this.animateScrollService.scrollToElement('services', duration) };
 	navigateToAbout(duration?:number){this.animateScrollService.scrollToElement('about', duration) };
 	navigateToContact(duration?:number){this.animateScrollService.scrollToElement('contact', duration) };

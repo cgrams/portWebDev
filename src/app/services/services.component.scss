@@ -8,7 +8,7 @@ h3 {
 li.itemSolution {
     color: white;
     list-style: none;
-    font-size: 2em;
+    font-size: 1.6rem;
     line-height: 10vh;
 }
 
@@ -75,5 +75,12 @@ body {
 }
 
 h1{outline:none}
+
+.spinStar {
+    width: 25px;
+    top: 3px;
+    position: relative;
+    fill: white;
+}
 
 body{background-color:#234}

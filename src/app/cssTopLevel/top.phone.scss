@@ -63,9 +63,14 @@ ul.navButtonHolderMobile li a {
   		color: white;
 	}
 	section#work{
-		height: 1352px;
+		height: 1802px;
 	}
 
+}
+@media screen and (max-width: 602px) {
+	section#work{
+		height: 1702px;
+	}
 }
 
 @media screen and (min-width: 993px) {

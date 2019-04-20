@@ -2,19 +2,51 @@
 	<h3 id="services">Offered Solutions</h3>
 	 <ul class="solutionsList">
 
-	  <li *ngFor="let servicesExamples of move; let i = index" class="itemSolution" itemprop="headline">
-	    <span class="starMove{{i}}">&#9733; {{ servicesExamples.name }}</span> <span class="serviceExplaination">{{ servicesExamples.serviceExplaination }}</span>
-	  </li>
+		<li class="itemSolution" itemprop="headline">
+			<span class="starMove1">
+				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN">
+				<svg [@changeStar]=currentStarState  class="spinStar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+				<g><path d="M990,390H615.6L500,33.9L384.3,390H10l302.8,220L197.2,966.1L500,746l302.8,220.1L687.2,610L990,390L990,390z M688.4,808.6L500,671.6L311.6,808.5l72-221.6L195.1,450.1h232.9L500,228.6l71.9,221.6h232.9L616.4,587L688.4,808.6L688.4,808.6z"/></g>
+				</svg>				
+			</span>
+			<span class="serviceExplaination">Total Makeover: Rebuild website in latest technology</span>
+		</li>
+		<li class="itemSolution" itemprop="headline">
+			<span class="starMove2">
+				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN">
+				<svg [@changeStar]=currentStarState2  class="spinStar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+				<g><path d="M990,390H615.6L500,33.9L384.3,390H10l302.8,220L197.2,966.1L500,746l302.8,220.1L687.2,610L990,390L990,390z M688.4,808.6L500,671.6L311.6,808.5l72-221.6L195.1,450.1h232.9L500,228.6l71.9,221.6h232.9L616.4,587L688.4,808.6L688.4,808.6z"/></g>
+				</svg>				
+			</span>
+			<span class="serviceExplaination">Partial Makeover: New landing page with old website framework</span>
+		</li>
+		<li class="itemSolution" itemprop="headline">
+			<span class="starMove3">
+				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN">
+				<svg [@changeStar]=currentStarState3  class="spinStar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+				<g><path d="M990,390H615.6L500,33.9L384.3,390H10l302.8,220L197.2,966.1L500,746l302.8,220.1L687.2,610L990,390L990,390z M688.4,808.6L500,671.6L311.6,808.5l72-221.6L195.1,450.1h232.9L500,228.6l71.9,221.6h232.9L616.4,587L688.4,808.6L688.4,808.6z"/></g>
+				</svg>				
+			</span>
+			<span class="serviceExplaination">Small Changes: Make minor adjustments for your old website</span>
+		</li>
+		<li class="itemSolution" itemprop="headline">
+			<span class="starMove4">
+				<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN">
+				<svg [@changeStar]=currentStarState4  class="spinStar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+				<g><path d="M990,390H615.6L500,33.9L384.3,390H10l302.8,220L197.2,966.1L500,746l302.8,220.1L687.2,610L990,390L990,390z M688.4,808.6L500,671.6L311.6,808.5l72-221.6L195.1,450.1h232.9L500,228.6l71.9,221.6h232.9L616.4,587L688.4,808.6L688.4,808.6z"/></g>
+				</svg>				
+			</span>
+			<span class="serviceExplaination">Small Changes: Make minor adjustments for your old website</span>
+		</li>
+
 
 	 </ul>
 </div>
 
-	<div class="{{rotationAnimation}} animated"></div>
-
-	<svg class="editorial " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+	<svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
 	  <defs>
 	    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-	    <linearGradient id="grad1" x1="90%" y1="30%" x2="100%" y2="0%">
+	    <linearGradient [@changeStar]=currentStarState id="grad1" x1="90%" y1="30%" x2="100%" y2="0%">
 	      <stop offset="40%" style="stop-color:#4579e2;stop-opacity:1" />
 	      <stop offset="100%" style="stop-color:#54b4eb;stop-opacity:1" />
 	    </linearGradient>

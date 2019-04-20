@@ -1,12 +1,13 @@
 <section class="topWrapper" itemtype="http://schema.org/SiteNavigationElement">  
-	<ul class="navButtonHolder">
-		<!--<li (click)="navigateToContact(400)"><a>TUTORIALS</a></li>-->
-		<li (click)="navigateToAbout(300)"><a>ABOUT</a></li>	
-		<li (click)="navigateToWork(400)"><a>LATEST&nbsp;WORK</a></li>
-		<li (click)="navigateToServices(300)"><a>SERVICES</a></li>
-		<li (click)="navigateToContact(400)"><a>CONTACT</a></li>
-	</ul>
-
-	<app-title [topLevelTextController]="textChangeVariable" [topLevelHandController]="handChangeVariable"></app-title>
+	<nav>
+		<ul class="navButtonHolder">
+			<!--<li (click)="navigateToContact(400)"><a>TUTORIALS</a></li>-->
+			<li (click)="navigateToAbout(300)"><a>ABOUT</a></li>	
+			<li (click)="navigateToWork(400)"><a>LATEST&nbsp;WORK</a></li>
+			<li (click)="navigateToServices(300)"><a>SERVICES</a></li>
+			<li (click)="navigateToContact(400)"><a>CONTACT</a></li>
+		</ul>
+	</nav>
 	
+	<app-title [topLevelTextController]="textChangeVariable" [topLevelHandController]="handChangeVariable"></app-title>
 </section>

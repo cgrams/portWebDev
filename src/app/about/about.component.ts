@@ -22,10 +22,13 @@ import { NgAnimateScrollService } from 'ng-animate-scroll';
 	    })),
 	    transition('initial=>final', animate('1000ms 100ms ease-in-out',
 
+ 
+
 	    keyframes([
-              style({ background: "white", top: '-12px', }),
-              style({ background: "gray", top: '5px', }),
-              style({ background: 'radial-gradient(ellipse at center, #1e5799 0%,#207cca 0%,#2989d8 7%,#7db9e8 100%)', top: '0px', })
+              style({ background: "white", top: '0px', }),
+              style({ background: "#fdfdfdde", top: '0px', }),
+              style({ textShadow: 'rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px, rgb(255, 255, 255) 1px 1px 0px' }),
+              style({ textShadow: 'rgb(21, 181, 208) -1px -1px 0px, rgb(21, 181, 208) 1px -1px 0px, rgb(21, 181, 208) -1px 1px 0px, rgb(21, 181, 208) 1px 1px 0px' })
         	])
 
         )),

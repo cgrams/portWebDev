@@ -50,7 +50,17 @@ import * as lozad from 'lozad';
 	    	top: '60%',
 	    	position: 'relative',
 	    	opacity: 1
-	    })),	    	    	    
+	    })),	
+		state('initial4', style({
+			top: '0px',
+			position: 'relative',
+			opacity: 0
+	    })),
+	    state('final4', style({
+	    	top: '80%',
+	    	position: 'relative',
+	    	opacity: 1
+	    })),		        	    	    
 	    transition('initial=>final', animate('1000ms')),
 	    transition('final=>initial', animate('1000ms')),
 
@@ -61,7 +71,10 @@ import * as lozad from 'lozad';
 	    transition('final2=>initial2', animate('1500ms 500ms ease-in-out')),
 
 	    transition('initial3=>final3', animate('2000ms 500ms ease-in-out')),
-	    transition('final3=>initial3', animate('2000ms 500ms ease-in-out'))	 
+	    transition('final3=>initial3', animate('2000ms 500ms ease-in-out')),
+
+	    transition('initial4=>final4', animate('2500ms 500ms ease-in-out')),
+	    transition('final4=>initial4', animate('2500ms 500ms ease-in-out'))		     
 	  ]),
 	]
 
@@ -76,15 +89,17 @@ export class ProjectsComponent implements OnInit {
 		picState1 = 'initial1';
 		picState2 = 'initial2';
 		picState3 = 'initial3';
+		picState4 = 'initial4';
 
 		@HostListener('window:scroll', ['$event'])
 		changeState() {
 				const componentPosition = this.el.nativeElement.offsetTop;
-			    const scrollPosition3 = this.window.pageYOffset + 100;
+			    const scrollPosition3 = this.window.pageYOffset - 430;
 		    	if (scrollPosition3 >= componentPosition) { this.picState  = 'final'; }  
 			    if (scrollPosition3 >= componentPosition) { this.picState1  = 'final1'; }  
 		    	if (scrollPosition3 >= componentPosition) { this.picState2  = 'final2'; }  
-		    	if (scrollPosition3 >= componentPosition) { this.picState3  = 'final3'; } 	
+		    	if (scrollPosition3 >= componentPosition) { this.picState3  = 'final3'; }
+		    	if (scrollPosition3 >= componentPosition) { this.picState4  = 'final4'; } 		    		
 			}
 
 	projectSkillsList: any[] = [

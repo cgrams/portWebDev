@@ -28,9 +28,9 @@ h4{
   animation-duration: 2s;
 }
 .projectsContainer{
-    padding: 6vh 6vw 15vh 6vw;
+    padding: 200px 100px;
     font-size: 1.4em;
-    height: 140vh;
+    height: 1500px;
 }
 h3 {
     text-align: center;
@@ -49,8 +49,8 @@ img:hover {
     filter: grayscale(0%);
 }
 .picsContainerProjects article img {
-    width: 199px;
-    height: 199px;
+    max-width: 199px;
+    max-height: 199px;
     margin: 5px;
     padding: 1%;    
 }
@@ -59,11 +59,13 @@ img:hover {
 }
 .picsContainerProjects {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 100%;
+    float: left;
 }
 .threePreviousWork {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 article.thumb.middlePic {
     position: relative;

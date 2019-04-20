@@ -7,12 +7,10 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule } from '@angular/router';
 
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
-
 
 import { AppComponent } from './app.component';
 import { TopComponent } from './top/top.component';
@@ -20,10 +18,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 
-
 import { ParallaxModule, ParallaxConfig } from 'ngx-parallax';
 import * as lozad from 'lozad';
-
 
 import { TitleComponent } from './top/title/title.component';
 import { DeepBlueComponent } from './services/deep-blue/deep-blue.component';
@@ -47,13 +43,12 @@ import { environment } from '../environments/environment';
     ContactComponent
   ],
   imports:[
- CommonModule,
+    CommonModule,
     NgtUniversalModule,
     BrowserModule.withServerTransition({appId: 'my-app'}),
     TransferHttpCacheModule,
     HttpClientModule,
  
-    
     BrowserAnimationsModule,
     MatButtonModule,
     MatSidenavModule,

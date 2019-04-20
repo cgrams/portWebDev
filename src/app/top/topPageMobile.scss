@@ -8,6 +8,8 @@
 	.topWrapper{
 	    padding: 0 6% 0 6%;
 	    height: 700px;
+	    display: flex;
+    	align-items: center;
 	}
 	ul.navButtonHolder {
     display: none;
@@ -30,13 +32,17 @@
 	section.topWrapper{
 	    padding: 0 6% 0 6%;
 	    height: 600px;
+    display: flex;
+    align-items: center;	    
 	}
 
 }
 
 @media only screen and (max-width: 650px) {
 	section.topWrapper{
-	    padding: 0 6% 0 6%;
-	    height: 65vh;
+    padding: 0 6% 0 6%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
 	}
 }

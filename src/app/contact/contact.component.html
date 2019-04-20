@@ -10,7 +10,7 @@
 				</span> 
 			<br /> Lets chat...
 			</h3>
-			<a href="https://portwebsolutions.com.au/form/index.html" class="centerButtonQuote">
+			<a href="https://portwebsolutions.com.au/form/index.html" title="Form for getting a free quote" class="centerButtonQuote">
 				<button mat-raised-button class="bigquote" >Get A Quote</button>
 			</a>
 		</div>
@@ -20,9 +20,13 @@
 				<li itemprop="areaServed">Port <br /> Macquarie</li>
 			</ul>
 			<ul class="listOfContacts">
-				<li [@changeDivSize]=currentState ><a class="phoneGroup" href="https://goo.gl/maps/8rJbYFhPm7C2"><div class="specialEm" [innerHTML]="emStyled"> </div>eet Up</a></li>
+				<li [@changeDivSize]=currentState >
+					<a class="phoneGroup" title="Opens maps to where we can meet" href="https://goo.gl/maps/8rJbYFhPm7C2">
+						<div class="specialEm" [innerHTML]="emStyled"></div>eet Up
+					</a>
+				</li>
 				<li [@changeDivSize]=currentState>
-					<a href="tel:0452 241 945" class="phoneGroup" itemprop="telephone"><div [class]="phoneString" id="phoneAppear"> &#9742; 	&nbsp;</div> <div>Phone: 0452 241 945</div></a>
+					<a href="tel:0452 241 945" title="Starts a phone call to Caleb" class="phoneGroup" itemprop="telephone"><div [class]="phoneString" id="phoneAppear"> &#9742; 	&nbsp;</div> <div>Phone: 0452 241 945</div></a>
 				</li>
 				<li  [@changeDivSize]=currentState>{{hiddenMail}}</li>
 			</ul>
